@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Blog - Descubre El Salvador</title>
+        <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+        <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+        <link rel="stylesheet" href="../CSS/buscador.CSS">
+        <link rel="icon" type="image/png" href="../IMG/logo2.jpeg">
+    </head>
+
+    <body>
+
+        <!-- ===== Menú ===== -->
+        <nav class="menu" aria-label="Navegacion principal">
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="menu-links" id="menuLinks">
+                <a href="../index.html">INICIO</a>
+                <a href="Destinos.html">DESTINOS</a>
+                <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+                <a href="gastronomia.html">GASTRONOMÍA</a>
+                <a href="eventos.html">EVENTOS</a>
+            </div>
+
+            <span class="nav-iconos">
+        <div class="buscador-nav">
+          <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <form class="buscador-form" role="search" action="Destinos.html" method="get">
+            <input
+              type="search"
+              name="q"
+              class="buscador-input"
+              placeholder="Buscar destinos..."
+              aria-label="Buscar destinos"
+            />
+          </form>
+        </div>
+        <div class="user-menu">
+          <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+            </svg>
+          </a>
+
+          <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+            <p>Sesión activa como:</p>
+            <strong id="nombreUsuarioTarjeta">Usuario</strong>
+            <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+          </div>
+        </div>
+        <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="carrito-contador" id="carritoContador">0</span>
+        </a>
+      </span>
+    </nav>
+
+        <!-- ===== Portada ===== -->
+        <header class="portada">
+            <img src="../IMG/blog.jpeg" alt="Paisaje de El Salvador con volcanes">
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+                <p>Historias, rutas y recomendaciones</p>
+                <h1>
+                    Nuestro
+                    <span class="destacado">blog</span>
+                </h1>
+                <a class="boton" href="#entradas">Ver entradas</a>
+            </div>
+        </header>
+
+        <!-- ===== Bienvenida ===== -->
+        <section class="bienvenida">
+            <div class="contenedor bienvenida-grid">
+
+                <div class="bienvenida-texto">
+                    <h2>Inspírate antes de viajar</h2>
+                    <p>
+                        Aquí compartimos ideas, rutas y experiencias para que descubras El Salvador de la mejor manera, con consejos pensados para viajeros nacionales y extranjeros.
+                    </p>
+                    <p>
+                        Desde escapadas de fin de semana hasta guías de comida y cultura, cada entrada te ayuda a planear un viaje distinto.
+                    </p>
+                </div>
+
+                <div class="bienvenida-imagen">
+                    <img src="../IMG/blog2.jpeg" alt="Volcanes de El Salvador">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== Entradas del blog ===== -->
+        <section class="seccion fondo-claro" id="entradas">
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Entradas recientes</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <div class="lista">
+                    <div>
+                        <b>1</b>
+                        <span>
+                            <strong>Cinco destinos para una escapada de fin de semana</strong>
+                            Volcanes, playas y pueblos que puedes visitar en solo dos días.
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>2</b>
+                        <span>
+                            <strong>La Ruta de las Flores paso a paso</strong>
+                            Qué ver, dónde comer y cómo organizar tu recorrido en un día.
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>3</b>
+                        <span>
+                            <strong>Guía para pedir pupusas como local</strong>
+                            Sabores, acompañamientos y consejos para disfrutar el plato más típico del país.
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>4</b>
+                        <span>
+                            <strong>Surf para principiantes en la costa</strong>
+                            Dónde aprender, qué llevar y cómo elegir una buena escuela.
+                        </span>
+                    </div>
+
+                    <div>
+                        <b>5</b>
+                        <span>
+                            <strong>Semana Santa en El Salvador</strong>
+                            Tradiciones, alfombras y eventos que no te puedes perder.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== Pie de página ===== -->
+     <footer class="footer">
+
+        <div class="footer-contenido">
+
+        <div class="footer-columna footer-marca">
+
+            <h3>Descubre El Salvador</h3>
+
+            <p>
+                Te invitamos a descubrir la belleza,
+                cultura y calidez de nuestra gente.
+            </p>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>INFORMACIÓN</h3>
+
+            <a href="Acercade.html">Acerca de El Salvador</a>
+            <a href="consejos.html">Consejos de viaje</a>
+            <a href="hospedaje.html">Hospedaje</a>
+            <a href="transporte.html">Transporte</a>
+            <a href="blog.html">Blog</a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>CONTACTOS</h3>
+
+            <p>📞 +503 6869-1065</p>
+            <p>✉ descubreelsalvador@gmail.com</p>
+            <p>📍 Sonsonate, El Salvador</p>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>REDES SOCIALES</h3>
+
+            <div class="footer-redes">
+
+                <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+                <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+                <a href="https://x.com/Descubriendosv0 ">X</a>  
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="footer-copy">
+            <p>© 2026 Descubre El Salvador. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <a id="whatsappFlotante"
+       href="#"
+       class="whatsapp-flotante"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Escríbenos por WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor" aria-hidden="true">
+            <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.68 4.523 1.857 6.36L4 29l7.86-1.816A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.664 1.078 1.09-4.55-.232-.371A9.77 9.77 0 0 1 5.818 15c0-5.613 4.57-10.182 10.183-10.182S26.184 9.387 26.184 15 20.615 24.818 16.001 24.818zm5.606-7.62c-.307-.154-1.817-.897-2.099-.998-.281-.103-.486-.154-.69.154-.205.307-.792.997-.972 1.202-.179.205-.358.23-.664.077-.307-.154-1.296-.478-2.469-1.523-.913-.814-1.529-1.82-1.708-2.128-.179-.307-.019-.473.135-.626.138-.138.307-.358.46-.537.154-.18.205-.307.307-.512.103-.205.051-.384-.026-.538-.077-.154-.69-1.663-.945-2.278-.249-.598-.502-.517-.69-.526l-.588-.01c-.205 0-.537.077-.818.384-.281.307-1.073 1.049-1.073 2.559 0 1.51 1.098 2.968 1.25 3.173.154.205 2.16 3.298 5.234 4.625.731.316 1.301.505 1.746.646.733.233 1.4.2 1.927.121.588-.088 1.817-.743 2.073-1.46.256-.717.256-1.332.179-1.46-.077-.128-.281-.205-.588-.359z"/>
+        </svg>
+    </a>
+
+        <script src="../JS/subpaginas.js"></script>
+
+    </body>
+</html>

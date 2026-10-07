@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cascada Los Tercios - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+</head>
+
+<body>
+
+   <nav class="menu" aria-label="Navegacion principal">
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="../index.html">INICIO</a>
+        <a href="Destinos.html" aria-current="page">DESTINOS</a>
+        <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+        <a href="gastronomia.html">GASTRONOMÍA</a>
+        <a href="eventos.html">EVENTOS</a>
+    </div>
+
+    <span class="nav-iconos">
+        <div class="buscador-nav">
+            <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+            <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+            </form>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                </svg>
+            </a>
+
+            <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                <p>Sesión activa como:</p>
+                <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+            </div>
+        </div>
+
+        <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="carrito-contador" id="carritoContador">0</span>
+        </a>
+    </span>
+
+</nav>
+
+
+    <main>
+
+        <section class="portada" id="inicio">
+
+            <img
+                src="../IMG/TerciosThum.jpg"
+                alt="Cascada Los Tercios en Suchitoto"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Una formación natural única en Suchitoto</p>
+
+                <h1>
+                    Cascada
+                    <span class="destacado">Los Tercios</span>
+                </h1>
+
+                <a href="#hospedaje" class="boton">Explorar la guía</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="bienvenida contenedor">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Una maravilla natural cerca de Suchitoto</h2>
+
+                    <p>
+                        La Cascada Los Tercios se encuentra en Suchitoto,
+                        Cuscatlán Norte, y destaca por su impresionante pared
+                        de columnas rocosas hexagonales. Durante la época
+                        lluviosa, el agua desciende sobre estas formaciones
+                        creando un paisaje espectacular. Desde la zona
+                        también se pueden apreciar vistas hacia el Lago
+                        Suchitlán.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+
+                    <img
+                        src="../IMG/TerciosThum.jpg"
+                        alt="Cascada Los Tercios"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion tradiciones" id="hospedaje">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+
+                    <span class="raya"></span>
+
+                    <h2>Experiencias en Los Tercios</h2>
+
+                    <span class="raya"></span>
+
+                </div>
+
+                <p class="subtitulo">
+                    Descubre las principales experiencias que ofrece
+                    este atractivo natural de Suchitoto.
+                </p>
+
+
+                <div class="tarjetas">
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/cascada-los-tercios.jpg"
+                            alt="Cascada Los Tercios"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>La cascada</h3>
+
+                            <p>
+                                La caída de agua supera los 10 metros y
+                                alcanza mayor fuerza durante la época lluviosa.
+                                El agua desciende sobre la característica
+                                pared de rocas, creando un paisaje natural
+                                impresionante.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/cascaa-formacion.jpg"
+                            alt="Rocas hexagonales de Los Tercios"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Formaciones rocosas</h3>
+
+                            <p>
+                                Una de las principales características de
+                                Los Tercios son sus columnas rocosas de
+                                formas hexagonales, que hacen que la pared
+                                de la cascada tenga una apariencia única.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/lago-suchitlan.jpg"
+                            alt="Vista desde la Cascada Los Tercios"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Vista al Lago Suchitlán</h3>
+
+                            <p>
+                                El recorrido también permite disfrutar de
+                                hermosos paisajes y vistas hacia el Lago
+                                Suchitlán, convirtiendo la visita en una
+                                experiencia que combina naturaleza y aventura.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion gastronomia fondo-claro" id="comida">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+
+                    <span class="raya"></span>
+
+                    <h2>Recomendaciones para tu visita</h2>
+
+                    <span class="raya"></span>
+
+                </div>
+
+                <p class="subtitulo">
+                    Algunos consejos para disfrutar de una visita
+                    segura y agradable a Los Tercios.
+                </p>
+
+
+                <div class="tarjetas">
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/senderismo-los-tercios.jpg"
+                            alt="Sendero hacia Los Tercios"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Senderismo</h3>
+
+                            <p>
+                                El descenso hacia la cascada requiere caminar
+                                por un terreno inclinado y rocoso. El recorrido
+                                es una pequeña aventura para quienes disfrutan
+                                explorar lugares naturales.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Recomendación:</strong>
+                                Caminar con precaución y utilizar calzado
+                                con buen agarre.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/foto-los-tercios.jpg"
+                            alt="Paisaje de Los Tercios"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Fotografía</h3>
+
+                            <p>
+                                Las columnas rocosas, la vegetación y la
+                                cascada durante la época lluviosa ofrecen
+                                diferentes oportunidades para tomar
+                                fotografías del paisaje.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Ideal para:</strong>
+                                Fotografía y naturaleza.
+                                <br>
+
+                                <strong>Consejo:</strong>
+                                Proteger el equipo de la humedad.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/naturaleza-los-tercios.webp"
+                            alt="Naturaleza en Los Tercios"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Naturaleza y aventura</h3>
+
+                            <p>
+                                Los Tercios combina vegetación, formaciones
+                                rocosas, senderismo y paisajes naturales en
+                                un recorrido que puede complementarse con
+                                una visita al centro histórico de Suchitoto.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Ubicación:</strong>
+                                Suchitoto, Cuscatlán Norte.
+                                <br>
+
+                                <strong>Recomendación:</strong>
+                                Llevar agua, protector solar y calzado
+                                antideslizante.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita a Los Tercios</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige una tour operadora, un guía o el transporte,
+                    indica la fecha y el número de personas, y agrega tu
+                    reserva al carrito.
+                </p>
+
+
+                <!-- ========== TOUR OPERADORAS ========== -->
+                <h3 class="reservas-grupo">Tour operadoras</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="tercios-tour-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Visita guiada a la Cascada Los Tercios"
+                             data-precio="15"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/cascada-los-tercios.jpg"
+                                 alt="Cascada Los Tercios"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Visita guiada a la Cascada Los Tercios</h4>
+                            <p>Descenso guiado hasta la cascada y sus columnas rocosas hexagonales, con tiempo para fotos.</p>
+
+                            <p class="reserva-precio">$15 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tercios-tour-02"
+                             data-tipo="Tour operadora"
+                             data-nombre="Los Tercios y centro histórico de Suchitoto"
+                             data-precio="30"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/calles-arquitectura-suchitoto.webp"
+                                 alt="Centro histórico de Suchitoto"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Los Tercios y centro histórico de Suchitoto</h4>
+                            <p>Visita a la cascada por la mañana y recorrido por las calles empedradas de Suchitoto por la tarde.</p>
+
+                            <p class="reserva-precio">$30 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tercios-tour-03"
+                             data-tipo="Tour operadora"
+                             data-nombre="Aventura: Los Tercios y paseo en lancha por el Lago Suchitlán"
+                             data-precio="40"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/lago-suchitlan.jpg"
+                                 alt="Lago Suchitlán"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Aventura: Los Tercios y paseo en lancha por el Lago Suchitlán</h4>
+                            <p>Caminata a la cascada y recorrido en lancha por el lago para completar el día entre naturaleza y paisajes.</p>
+
+                            <p class="reserva-precio">$40 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== GUÍAS TURÍSTICOS ========== -->
+                <h3 class="reservas-grupo">Guías turísticos</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="tercios-guia-01"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía local para el descenso a la cascada"
+                             data-precio="20"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/senderismo-los-tercios.jpg"
+                                 alt="Sendero hacia Los Tercios"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía local para el descenso a la cascada</h4>
+                            <p>Acompañamiento por el terreno inclinado y rocoso, con explicación de las formaciones y consejos de seguridad.</p>
+
+                            <p class="reserva-precio">$20 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tercios-guia-02"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía bilingüe (español e inglés)"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/TerciosThum.jpg"
+                                 alt="Cascada Los Tercios"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía bilingüe (español e inglés)</h4>
+                            <p>Ideal para visitantes extranjeros. Explicaciones en dos idiomas durante todo el recorrido.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tercios-guia-03"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía fotográfico de la cascada"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/foto-los-tercios.jpg"
+                                 alt="Paisaje de Los Tercios"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía fotográfico de la cascada</h4>
+                            <p>Te lleva a los mejores puntos para fotografiar las columnas rocosas, la caída de agua y las vistas al lago.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== TRANSPORTE ========== -->
+                <h3 class="reservas-grupo">Transporte</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="tercios-transporte-01"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido desde San Salvador"
+                             data-precio="10"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido desde San Salvador</h4>
+                            <p>Viaje de ida y vuelta hasta Suchitoto y la cascada, con salida por la mañana.</p>
+
+                            <p class="reserva-precio">$10 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tercios-transporte-02"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado desde Suchitoto"
+                             data-precio="20"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado desde Suchitoto</h4>
+                            <p>Vehículo para tu grupo desde el pueblo hasta la cascada, con conductor que espera durante la visita.</p>
+
+                            <p class="reserva-precio">$20 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tercios-transporte-03"
+                             data-tipo="Transporte"
+                             data-nombre="Bus turístico para grupos"
+                             data-precio="120"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-bus.jpg"
+                                 alt="Bus turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Bus turístico para grupos</h4>
+                            <p>Para excursiones escolares, familias grandes o grupos de amigos. Reserva con anticipación.</p>
+
+                            <p class="reserva-precio">$120 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="30" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+
+
+    <footer class="footer footer-unificado">
+
+        <div class="banda-cierre">
+
+            <p class="frase">
+                Descubre la magia de
+                <span class="destacado">Los Tercios</span>
+            </p>
+
+            <p class="lema">
+                💧 Naturaleza, aventura y paisajes de Suchitoto
+            </p>
+
+        </div>
+
+
+        <div class="footer-contenido">
+
+
+            <div class="footer-columna footer-marca">
+
+                <h3>Descubre El Salvador</h3>
+
+                <p>
+                    Te invitamos a descubrir la belleza,
+                    cultura y calidez de nuestra gente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>INFORMACIÓN</h3>
+
+            <a href="Acercade.html">Acerca de El Salvador</a>
+            <a href="consejos.html">Consejos de viaje</a>
+            <a href="hospedaje.html">Hospedaje</a>
+            <a href="transporte.html">Transporte</a>
+            <a href="blog.html">Blog</a>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>CONTACTOS</h3>
+
+                <p>📞 +503 6869-1065</p>
+                <p>✉descubreelsalvador@gmail.com</p>
+                <p>📍 Sonsonate, El Salvador</p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>REDES SOCIALES</h3>
+
+                <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 Descubre El Salvador.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <a id="whatsappFlotante"
+       href="#"
+       class="whatsapp-flotante"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Escríbenos por WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor" aria-hidden="true">
+            <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.68 4.523 1.857 6.36L4 29l7.86-1.816A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.664 1.078 1.09-4.55-.232-.371A9.77 9.77 0 0 1 5.818 15c0-5.613 4.57-10.182 10.183-10.182S26.184 9.387 26.184 15 20.615 24.818 16.001 24.818zm5.606-7.62c-.307-.154-1.817-.897-2.099-.998-.281-.103-.486-.154-.69.154-.205.307-.792.997-.972 1.202-.179.205-.358.23-.664.077-.307-.154-1.296-.478-2.469-1.523-.913-.814-1.529-1.82-1.708-2.128-.179-.307-.019-.473.135-.626.138-.138.307-.358.46-.537.154-.18.205-.307.307-.512.103-.205.051-.384-.026-.538-.077-.154-.69-1.663-.945-2.278-.249-.598-.502-.517-.69-.526l-.588-.01c-.205 0-.537.077-.818.384-.281.307-1.073 1.049-1.073 2.559 0 1.51 1.098 2.968 1.25 3.173.154.205 2.16 3.298 5.234 4.625.731.316 1.301.505 1.746.646.733.233 1.4.2 1.927.121.588-.088 1.817-.743 2.073-1.46.256-.717.256-1.332.179-1.46-.077-.128-.281-.205-.588-.359z"/>
+        </svg>
+    </a>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+
+</html>

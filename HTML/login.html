@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/login.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+</head>
+
+<body style="margin:0; font-family:Arial, sans-serif; background:#f5f5f5;">
+
+    <!-- MENÚ -->
+    <nav class="menu" aria-label="Navegacion principal">
+
+        <a href="../index.html" aria-current="page">REGRESAR</a>
+        
+    </nav>
+
+    <main class="login-wrap">
+
+        <!-- Panel visual -->
+        <section class="login-visual" aria-hidden="true">
+            <div class="login-visual-overlay"></div>
+            <p class="login-visual-eyebrow">Descubre El Salvador</p>
+            <h1 class="login-visual-titulo">Tu próxima<span>aventura</span>te espera</h1>
+            <p class="login-visual-texto">Guarda tus destinos favoritos, arma tu propia ruta y vuelve a encontrarla cuando quieras.</p>
+        </section>
+
+        <!-- Panel de formulario -->
+        <section class="login-panel" aria-labelledby="titulo-login">
+
+            <form class="login-form" id="formLogin" novalidate>
+                <h2 id="titulo-login">Iniciar sesión</h2>
+                <p class="login-sub">Ingresa tus datos para continuar</p>
+
+                <label class="campo">
+                    <span>Correo electrónico</span>
+                    <input type="email" name="correo" placeholder="tucorreo@ejemplo.com" required autocomplete="email">
+                </label>
+
+                <label class="campo">
+                    <span>Contraseña</span>
+                    <div class="campo-clave">
+                        <input type="password" name="clave" id="inputClave" placeholder="Tu contraseña" required autocomplete="current-password" minlength="6">
+                        <button type="button" class="ver-clave" id="botonVerClave" aria-label="Mostrar contraseña">Ver</button>
+                    </div>
+                    <span class="mensaje-error" id="mensajeErrorLogin" role="alert" aria-live="polite"></span>
+                </label>
+
+
+                <button type="submit" class="boton-entrar">Entrar</button>
+
+                <p class="login-registro">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+            </form>
+
+        </section>
+
+    </main>
+    
+    <script src="../JS/login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semana Santa - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">    
+</head>
+
+<body>
+
+<nav class="menu" aria-label="Navegacion principal">
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="../index.html">INICIO</a>
+        <a href="Destinos.html">DESTINOS</a>
+        <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+        <a href="gastronomia.html">GASTRONOMÍA</a>
+        <a href="eventos.html" aria-current="page">EVENTOS</a>
+    </div>
+
+    <span class="nav-iconos">
+        <div class="buscador-nav">
+            <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+            <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+            </form>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                </svg>
+            </a>
+
+            <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                <p>Sesión activa como:</p>
+                <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+            </div>
+        </div>
+
+        <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="carrito-contador" id="carritoContador">0</span>
+        </a>
+    </span>
+
+</nav>
+
+
+    <main>
+
+        <section class="portada" id="inicio">
+
+            <img
+                src="../IMG/nazarenodeizalco.jpeg"
+                alt="Semana Santa en El Salvador"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Fe y tradición de El Salvador</p>
+
+                <h1>
+                    Semana
+                    <span class="destacado">Santa</span>
+                </h1>
+
+                <a href="#hospedaje" class="boton">
+                    Explorar la guía
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="bienvenida contenedor" id="origen">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Una celebración llena de fe, cultura y tradición</h2>
+
+                    <p>
+                    La Semana Santa en El Salvador se vive desde el ámbito religioso como una
+                    de las muestras de fe, solemnidad y sincretismo cultural más profundas de
+                    Centroamérica. Durante estos días, el país se paraliza para conmemorar la
+                    Pasión, Muerte y Resurrección de Cristo a través de rituales centenarios
+                    enraizados en la época colonial y la cosmovisión indígena.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+                    <img
+                        src="../IMG/alfombras.jpeg"
+                        alt="Alfombra de aserrín de Semana Santa"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion tradiciones" id="hospedaje">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Tradición de El Salvador</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Conoce las tradiciones y costumbres de unas de las celebraciones
+                    más representativas del país.
+                </p>
+
+                <div class="tarjetas">
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/alfombras.jpeg"
+                            alt="Alfombra de aserrín de Semana Santa"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+                        <h3>Alfombras</h3>
+
+                        <p>
+                        Se elaboran utilizando aserrín teñido con añelina de colores
+                        brillantes, sal, arena y moldes de madera. Las familias y
+                        comunidades trabajan durante horas diseñando minuciosamente
+                        pasajes bíblicos o patrones geométricos sobre las calles.
+                        </p>
+                        </div>
+
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/dulce en miel.jpeg"
+                            alt="Dulces tradicionales en miel de Semana Santa"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+                        <h3>Comidas</h3>
+
+                        <p>
+                        La gastronomía de la Semana Santa en El Salvador destaca por una profunda
+                        tradición donde los sabores dulces de la temporada veraniega y la abstinencia
+                        de carnes rojas definen el menú de los hogares salvadoreños. Los platillos e
+                        ingredientes más representativos se dividen en opciones saladas y los tradicionales
+                        dulces "en miel".  
+                        </p>
+                        </div>
+
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/tercera caida.jpeg"
+                            alt="Procesión del silencio"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+                        <h3>Tradición salvadoreña</h3>
+
+                        <p>
+                            El Jueves Santo se conmemora con la devota visita a los siete templos y la
+                            nocturna Procesión del Silencio realizada en penumbra. El Viernes Santo las
+                            calles se llenan de color con alfombras de aserrín confeccionadas para el
+                            paso de la multitudinaria Procesión del Santo Entierro. El Sábado Santo se
+                            acompaña el luto de la Virgen por la tarde y se celebra la Resurrección por
+                            la noche durante la Vigilia Pascual.
+                        </p>
+                        </div>
+
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion lugares fondo-claro" id="comida">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Dónde vivirla</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    La semana santa se celebra en muchos lugares del país
+                    pero en los lugares más destacados son :
+                </p>
+
+                <div class="tarjetas">
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/nazareno de sonsonate.jpeg"
+                            alt="Procesión de Semana Santa en Sonsonate"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+                        <h3>Sonsonate</h3>
+
+                        <p>
+                            La Semana Santa en el departamento de Sonsonate es
+                            considerada la máxima expresión de fe y tradición 
+                            en El Salvador. Su majestuosidad, fervor popular y
+                            arraigo de más de un siglo hicieron que fuera declarada
+                            Patrimonio Cultural Religioso de El Salvador en 2013.
+                        </p>
+
+                        <p class="datos">
+
+                            <strong>Ubicación:</strong>
+                            Departamento de Sonsonate
+
+                        </p>
+
+                        <a
+                            class="ver-mapa"
+                            href="https://www.google.com/maps/search/?api=1&query=Sonsonate+El+Salvador"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            📍 Ver ubicación
+                        </a>
+                        </div>
+
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/nazarenodeizalco.jpeg"
+                            alt="Cofradía indígena de Semana Santa en Izalco"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+                        <h3>Izalco</h3>
+
+                        <p>
+                            La Semana Santa en Izalco es una de las celebraciones más
+                            místicas y antiguas de El Salvador. Su valor radica en el
+                            sincretismo cultural, donde las tradiciones católicas se 
+                            fusionan con los ritos de las cofradías indígenas de ascendencia Pipil.
+                        </p>
+
+                        <p class="datos">
+
+                            <strong>Ubicación:</strong>
+                            Izalco, departamento de Sonsonate
+
+                        </p>
+
+                        <a
+                            class="ver-mapa"
+                            href="https://www.google.com/maps/search/?api=1&query=Izalco+El+Salvador"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            📍 Ver ubicación
+                        </a>
+                        </div>
+
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/ss santa ana.jpeg"
+                            alt="Catedral de Santa Ana durante Semana Santa"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+                        <h3>Santa Ana</h3>
+
+                        <p>
+                         La Semana Santa en la ciudad de Santa Ana destaca por su profundo fervor
+                         y el imponente marco arquitectónico de su icónico Centro Histórico. Las
+                         principales solemnidades son coordinadas por la majestuosa Catedral de la
+                        Santísima Trinidad (Catedral de Santa Ana).
+                        </p>
+
+                        <p class="datos">
+
+                            <strong>Ubicación:</strong>
+                            Departamento de Santa Ana
+
+                        </p>
+
+                        <a
+                            class="ver-mapa"
+                            href="https://www.google.com/maps/search/?api=1&query=Santa+Ana+El+Salvador"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            📍 Ver ubicación
+                        </a>
+                        </div>
+
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita a la Semana Santa</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige el día del evento, selecciona una tour operadora, un guía o el transporte, indica el número de personas y agrega tu reserva al carrito.
+                </p>
+
+
+                <!-- ========== JUEVES SANTO · 25 DE MARZO ========== -->
+                <h3 class="reservas-grupo">Jueves Santo · 25 de marzo</h3>
+
+                <p class="subtitulo">
+                    Visita a los siete templos y Procesión del Silencio, ya de noche.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Ruta de los siete templos en Sonsonate"
+                             data-precio="25"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/nazareno de sonsonate.jpeg"
+                                 alt="Procesión de Semana Santa en Sonsonate"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Ruta de los siete templos en Sonsonate</h4>
+                            <p>Recorrido guiado por los templos que se visitan en Jueves Santo, con regreso para ver la Procesión del Silencio.</p>
+
+                            <p class="reserva-precio">$25 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-25" min="2027-03-25" max="2027-03-25" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-02"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía local para la Procesión del Silencio"
+                             data-precio="25"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/tercera caida.jpeg"
+                                 alt="Procesión del silencio"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía local para la Procesión del Silencio</h4>
+                            <p>Acompañamiento durante la noche con explicación del significado de la procesión y los mejores puntos para verla.</p>
+
+                            <p class="reserva-precio">$25 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-25" min="2027-03-25" max="2027-03-25" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-03"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús San Salvador – Sonsonate (ida y vuelta)"
+                             data-precio="12"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús San Salvador – Sonsonate (ida y vuelta)</h4>
+                            <p>Salida por la mañana y regreso en la noche, después de la procesión.</p>
+
+                            <p class="reserva-precio">$12 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-25" min="2027-03-25" max="2027-03-25" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== VIERNES SANTO · 26 DE MARZO ========== -->
+                <h3 class="reservas-grupo">Viernes Santo · 26 de marzo</h3>
+
+                <p class="subtitulo">
+                    Alfombras de aserrín en las calles y Procesión del Santo Entierro.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-04"
+                             data-tipo="Tour operadora"
+                             data-nombre="Alfombras de aserrín y Procesión del Santo Entierro"
+                             data-precio="30"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/alfombras.jpeg"
+                                 alt="Alfombra de aserrín de Semana Santa"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Alfombras de aserrín y Procesión del Santo Entierro</h4>
+                            <p>Recorrido por las calles para ver cómo se elaboran las alfombras y presenciar el paso de la procesión.</p>
+
+                            <p class="reserva-precio">$30 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-26" min="2027-03-26" max="2027-03-26" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-05"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía de tradiciones y cofradías de Izalco"
+                             data-precio="30"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/nazarenodeizalco.jpeg"
+                                 alt="Cofradía indígena de Semana Santa en Izalco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía de tradiciones y cofradías de Izalco</h4>
+                            <p>Explicación de las cofradías pipiles y del sincretismo entre tradición católica e indígena.</p>
+
+                            <p class="reserva-precio">$30 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-26" min="2027-03-26" max="2027-03-26" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-06"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado Sonsonate – Izalco"
+                             data-precio="45"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado Sonsonate – Izalco</h4>
+                            <p>Vehículo con conductor disponible durante el día para moverte entre los puntos de las procesiones.</p>
+
+                            <p class="reserva-precio">$45 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-26" min="2027-03-26" max="2027-03-26" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== SÁBADO SANTO · 27 DE MARZO ========== -->
+                <h3 class="reservas-grupo">Sábado Santo · 27 de marzo</h3>
+
+                <p class="subtitulo">
+                    Acompañamiento a la Virgen por la tarde y Vigilia Pascual por la noche.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-07"
+                             data-tipo="Tour operadora"
+                             data-nombre="Ruta de sabores de Semana Santa: dulces en miel"
+                             data-precio="20"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/dulce en miel.jpeg"
+                                 alt="Dulces tradicionales en miel de Semana Santa"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Ruta de sabores de Semana Santa: dulces en miel</h4>
+                            <p>Degustación de los dulces típicos de la temporada en mercados y casas de tradición.</p>
+
+                            <p class="reserva-precio">$20 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-27" min="2027-03-27" max="2027-03-27" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-08"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía bilingüe (español e inglés)"
+                             data-precio="45"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/ss santa ana.jpeg"
+                                 alt="Catedral de Santa Ana durante Semana Santa"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía bilingüe (español e inglés)</h4>
+                            <p>Ideal para visitantes extranjeros. Explicaciones en dos idiomas sobre las celebraciones del Sábado Santo.</p>
+
+                            <p class="reserva-precio">$45 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-27" min="2027-03-27" max="2027-03-27" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="semanasanta-09"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús San Salvador – Santa Ana (ida y vuelta)"
+                             data-precio="10"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús San Salvador – Santa Ana (ida y vuelta)</h4>
+                            <p>Viaje de ida y vuelta para acompañar las celebraciones de la tarde y la noche.</p>
+
+                            <p class="reserva-precio">$10 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-03-27" min="2027-03-27" max="2027-03-27" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+<footer class="footer">
+
+        <div class="banda-cierre">
+            <p class="frase">Vive la fe de la <span class="destacado">Semana Santa</span></p>
+            <p class="lema">✝️ Tradición que se vive con el corazón</p>
+        </div>
+
+        <div class="footer-contenido">
+
+        <div class="footer-columna footer-marca">
+
+            <h3>Descubre El Salvador</h3>
+
+            <p>
+                Te invitamos a descubrir la belleza,
+                cultura y calidez de nuestra gente.
+            </p>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>INFORMACIÓN</h3>
+
+            <a href="Acercade.html">Acerca de El Salvador</a>
+            <a href="consejos.html">Consejos de viaje</a>
+            <a href="hospedaje.html">Hospedaje</a>
+            <a href="transporte.html">Transporte</a>
+            <a href="blog.html">Blog</a>
+            <a href="#reservas">Reservas</a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>CONTACTOS</h3>
+
+            <p>📞 +503 6869-1065</p>
+            <p>✉ descubreelsalvador@gmail.com</p>
+            <p>📍 Sonsonate, El Salvador</p>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>REDES SOCIALES</h3>
+
+            <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+
+        </div>
+
+        </div>
+
+        <div class="footer-copy">
+            <p>© 2026 Descubre El Salvador. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+</html>

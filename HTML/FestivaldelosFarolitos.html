@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de los Farolitos - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+   
+    <nav class="menu" aria-label="Navegacion principal">
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="../index.html">INICIO</a>
+        <a href="Destinos.html">DESTINOS</a>
+        <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+        <a href="gastronomia.html">GASTRONOMÍA</a>
+        <a href="eventos.html" aria-current="page">EVENTOS</a>
+    </div>
+
+    <span class="nav-iconos">
+        <div class="buscador-nav">
+            <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+            <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+            </form>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                </svg>
+            </a>
+
+            <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                <p>Sesión activa como:</p>
+                <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+            </div>
+        </div>
+
+        <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="carrito-contador" id="carritoContador">0</span>
+        </a>
+    </span>
+
+</nav>  
+
+
+    <!-- PORTADA -->
+    <main>
+
+        <section class="portada">
+
+            <img 
+                src="../IMG/Farolitos-ahuachapan.png"
+                alt="Festival de los Farolitos"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Luz, tradición y cultura en el occidente de El Salvador</p>
+
+                <h1>
+                    Festival de los
+                    <span class="destacado">Farolitos</span>
+                </h1>
+
+                <a href="#guia" class="boton">
+                    Explorar la guía
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCCIÓN -->
+        <section class="bienvenida contenedor" id="guia">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Descubre el Festival de los Farolitos</h2>
+
+                    <p>
+                        El Festival de los Farolitos es una de las tradiciones
+                        culturales y religiosas más representativas de El Salvador.
+                        Su celebración principal se realiza el 7 de septiembre,
+                        especialmente en Ahuachapán.
+                    </p>
+
+                    <p>
+                        Durante la celebración, las calles, casas y espacios públicos
+                        se llenan de miles de farolitos artesanales elaborados por
+                        familias y comunidades, creando un espectáculo lleno de luz,
+                        color y tradición.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+                    <img
+                        src="../IMG/Procesion-falores.jpeg"
+                        alt="Farolito artesanal iluminado en Ahuachapán"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRADICIONES -->
+        <section class="seccion tradiciones">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Tradiciones del festival</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <div class="tarjetas">
+
+
+                    <!-- TARJETA 1 -->
+                    <article class="tarjeta">
+
+                        <img
+                            src="../IMG/calles-farolitos.jpg"
+                            alt="Calles iluminadas con farolitos"
+                            class="tarjeta-img"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Calles iluminadas</h3>
+
+                            <p>
+                                Las calles y viviendas son decoradas con
+                                numerosos farolitos artesanales que iluminan
+                                la noche y crean un ambiente lleno de color.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 2 -->
+                    <article class="tarjeta">
+
+                        <img
+                            src="../IMG/faloritos-artesanales.jpg"
+                            alt="Farolitos artesanales"
+                            class="tarjeta-img"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Farolitos artesanales</h3>
+
+                            <p>
+                                Las familias elaboran farolitos utilizando
+                                materiales como madera y papel de colores,
+                                creando diferentes formas y diseños.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 3 -->
+                    <article class="tarjeta">
+
+                        <img
+                            src="../IMG/Procesion-falores.jpeg"
+                            alt="Procesión del Festival de los Farolitos"
+                            class="tarjeta-img"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Fe y tradición</h3>
+
+                            <p>
+                                La celebración está relacionada con la víspera
+                                del nacimiento de la Virgen María y cuenta con
+                                actividades religiosas, procesiones y misas.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LUGARES -->
+        <section class="seccion lugares fondo-claro">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Lugares donde disfrutarlo</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <div class="tarjetas">
+
+
+                    <!-- AHUACHAPÁN -->
+                    <article class="tarjeta">
+
+                        <img
+                            src="../IMG/Farolitos-ahuachapan.png"
+                            alt="Festival de los Farolitos en Ahuachapán"
+                            class="tarjeta-img"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Ahuachapán</h3>
+
+                            <p>
+                                Es uno de los principales lugares donde se
+                                celebra esta tradición, llenando sus calles
+                                de luz y color.
+                            </p>
+
+                            <div class="datos">
+
+                                <span>📍 Ahuachapán</span>
+
+                                <a
+                                    href="https://www.google.com/maps/search/Ahuachapan,+El+Salvador"
+                                    target="_blank"
+                                    class="ver-mapa"
+                                >
+                                    Ver en el mapa
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ATACO -->
+                    <article class="tarjeta">
+
+                        <img
+                            src="../IMG/farolitos1.jpeg"
+                            alt="Festival de los Farolitos en Ataco"
+                            class="tarjeta-img"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Concepción de Ataco</h3>
+
+                            <p>
+                                Sus calles empedradas y fachadas decoradas
+                                crean un escenario especial durante la
+                                celebración.
+                            </p>
+
+                            <div class="datos">
+
+                                <span>📍 Ahuachapán</span>
+
+                                <a
+                                    href="https://www.google.com/maps/search/Concepcion+de+Ataco,+El+Salvador"
+                                    target="_blank"
+                                    class="ver-mapa"
+                                >
+                                    Ver en el mapa
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- APANECA -->
+                    <article class="tarjeta">
+
+                        <img
+                            src="../IMG/falores-apaneca.jpg"
+                            alt="Festival de los Farolitos en Apaneca"
+                            class="tarjeta-img"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Apaneca</h3>
+
+                            <p>
+                                Otro de los destinos de la Ruta de las Flores
+                                donde se realizan actividades culturales y
+                                religiosas durante el festival.
+                            </p>
+
+                            <div class="datos">
+
+                                <span>📍 Ahuachapán</span>
+
+                                <a
+                                    href="https://www.google.com/maps/search/Apaneca,+El+Salvador"
+                                    target="_blank"
+                                    class="ver-mapa"
+                                >
+                                    Ver en el mapa
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita al Festival de los Farolitos</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige el día del evento, selecciona una tour operadora, un guía o el transporte, indica el número de personas y agrega tu reserva al carrito.
+                </p>
+
+
+                <!-- ========== 7 DE SEPTIEMBRE · TOUR OPERADORAS ========== -->
+                <h3 class="reservas-grupo">7 de septiembre · Tour operadoras</h3>
+
+                <p class="subtitulo">
+                    La celebración principal se realiza el 7 de septiembre, con las calles y casas llenas de farolitos al caer la noche.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="farolitos-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Noche de farolitos en Ahuachapán"
+                             data-precio="20"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Farolitos-ahuachapan.png"
+                                 alt="Festival de los Farolitos en Ahuachapán"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Noche de farolitos en Ahuachapán</h4>
+                            <p>Recorrido guiado por las calles iluminadas de Ahuachapán durante la noche del festival.</p>
+
+                            <p class="reserva-precio">$20 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="farolitos-02"
+                             data-tipo="Tour operadora"
+                             data-nombre="Taller de farolitos artesanales"
+                             data-precio="25"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/faloritos-artesanales.jpg"
+                                 alt="Farolitos artesanales"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Taller de farolitos artesanales</h4>
+                            <p>Aprende con una familia local cómo se elaboran los farolitos con madera y papel de colores.</p>
+
+                            <p class="reserva-precio">$25 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="10" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="farolitos-03"
+                             data-tipo="Tour operadora"
+                             data-nombre="Ruta de los farolitos: Ataco y Apaneca"
+                             data-precio="35"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/farolitos1.jpeg"
+                                 alt="Festival de los Farolitos en Ataco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Ruta de los farolitos: Ataco y Apaneca</h4>
+                            <p>Visita a Concepción de Ataco y Apaneca para ver cómo se vive la celebración en la Ruta de las Flores.</p>
+
+                            <p class="reserva-precio">$35 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== 7 DE SEPTIEMBRE · GUÍAS TURÍSTICOS ========== -->
+                <h3 class="reservas-grupo">7 de septiembre · Guías turísticos</h3>
+
+                <p class="subtitulo">
+                    Acompañamiento local durante la noche del festival.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="farolitos-04"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía local de la procesión y las calles iluminadas"
+                             data-precio="25"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Procesion-falores.jpeg"
+                                 alt="Procesión del Festival de los Farolitos"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía local de la procesión y las calles iluminadas</h4>
+                            <p>Explicación del vínculo con la víspera del nacimiento de la Virgen María y de las procesiones y misas del día.</p>
+
+                            <p class="reserva-precio">$25 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="farolitos-05"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía bilingüe (español e inglés)"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/calles-farolitos.jpg"
+                                 alt="Calles iluminadas con farolitos"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía bilingüe (español e inglés)</h4>
+                            <p>Ideal para visitantes extranjeros. Explicaciones en dos idiomas durante todo el recorrido.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="farolitos-06"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía fotográfico nocturno"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/falores-apaneca.jpg"
+                                 alt="Festival de los Farolitos en Apaneca"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía fotográfico nocturno</h4>
+                            <p>Te lleva a los mejores puntos para fotografiar los farolitos y las calles iluminadas.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== 7 DE SEPTIEMBRE · TRANSPORTE ========== -->
+                <h3 class="reservas-grupo">7 de septiembre · Transporte</h3>
+
+                <p class="subtitulo">
+                    Llega al occidente del país y regresa de noche sin preocuparte por manejar.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="farolitos-07"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido desde San Salvador"
+                             data-precio="12"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido desde San Salvador</h4>
+                            <p>Viaje de ida y vuelta a Ahuachapán, con salida por la tarde y regreso al terminar la celebración.</p>
+
+                            <p class="reserva-precio">$12 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="farolitos-08"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado entre Ahuachapán, Ataco y Apaneca"
+                             data-precio="50"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado entre Ahuachapán, Ataco y Apaneca</h4>
+                            <p>Vehículo con conductor disponible durante la tarde y la noche para moverte entre los pueblos.</p>
+
+                            <p class="reserva-precio">$50 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="farolitos-09"
+                             data-tipo="Transporte"
+                             data-nombre="Bus turístico para grupos"
+                             data-precio="130"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-bus.jpg"
+                                 alt="Bus turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Bus turístico para grupos</h4>
+                            <p>Para familias grandes, parroquias o grupos de amigos. Reserva con anticipación.</p>
+
+                            <p class="reserva-precio">$130 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-09-07" min="2027-09-07" max="2027-09-07" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="30" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+      <div class="banda-cierre">
+        <p class="frase">¡Vive la magia de los <span class="destacado">Farolitos</span>!</p>
+        <p class="lema">🏮 Tradición que ilumina nuestro corazón</p>
+      </div>
+      <div class="footer-contenido">
+        <div class="footer-columna footer-marca">
+          <h3>Descubre El Salvador</h3>
+          <p>Te invitamos a descubrir la belleza, cultura y calidez de nuestra gente.</p>
+        </div>
+
+        <div class="footer-columna">
+          <h3>INFORMACIÓN</h3>
+          <a href="./Acercade.html">Acerca de El Salvador</a>
+          <a href="Destinos.html">Consejos de viaje</a>
+          <a href="loscobanos.html">Hospedaje</a>
+          <a href="lugaresdestacados.html">Transporte</a>
+          <a href="gastronomia.html">Blog</a>
+          <a href="#reservas">Reservas</a>
+        </div>
+
+        <div class="footer-columna">
+          <h3>CONTACTOS</h3>
+          
+                <p>📞 +503 6869-1065</p>
+                <p>✉descubreelsalvador@gmail.com</p>
+                <p>📍 Sonsonate, El Salvador</p>
+
+        </div>
+
+        <div class="footer-columna">
+          <h3>REDES SOCIALES</h3>
+          <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 Descubre El Salvador. Todos los derechos reservados.
+      </div>
+
+    </footer>
+
+    <a id="whatsappFlotante"
+       href="#"
+       class="whatsapp-flotante"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Escríbenos por WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor" aria-hidden="true">
+            <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.68 4.523 1.857 6.36L4 29l7.86-1.816A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.664 1.078 1.09-4.55-.232-.371A9.77 9.77 0 0 1 5.818 15c0-5.613 4.57-10.182 10.183-10.182S26.184 9.387 26.184 15 20.615 24.818 16.001 24.818zm5.606-7.62c-.307-.154-1.817-.897-2.099-.998-.281-.103-.486-.154-.69.154-.205.307-.792.997-.972 1.202-.179.205-.358.23-.664.077-.307-.154-1.296-.478-2.469-1.523-.913-.814-1.529-1.82-1.708-2.128-.179-.307-.019-.473.135-.626.138-.138.307-.358.46-.537.154-.18.205-.307.307-.512.103-.205.051-.384-.026-.538-.077-.154-.69-1.663-.945-2.278-.249-.598-.502-.517-.69-.526l-.588-.01c-.205 0-.537.077-.818.384-.281.307-1.073 1.049-1.073 2.559 0 1.51 1.098 2.968 1.25 3.173.154.205 2.16 3.298 5.234 4.625.731.316 1.301.505 1.746.646.733.233 1.4.2 1.927.121.588-.088 1.817-.743 2.073-1.46.256-.717.256-1.332.179-1.46-.077-.128-.281-.205-.588-.359z"/>
+        </svg>
+    </a>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+
+</html>

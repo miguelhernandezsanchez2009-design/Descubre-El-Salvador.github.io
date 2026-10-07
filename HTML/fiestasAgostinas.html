@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fiestas Agostinas - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+    
+</head>
+
+<body>
+    
+      <nav class="menu" aria-label="Navegacion principal">
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="../index.html">INICIO</a>
+        <a href="Destinos.html">DESTINOS</a>
+        <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+        <a href="gastronomia.html">GASTRONOMÍA</a>
+        <a href="eventos.html" aria-current="page">EVENTOS</a>
+    </div>
+
+    <span class="nav-iconos">
+        <div class="buscador-nav">
+            <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+            <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+            </form>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                </svg>
+            </a>
+
+            <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                <p>Sesión activa como:</p>
+                <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+            </div>
+        </div>
+
+        <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="carrito-contador" id="carritoContador">0</span>
+        </a>
+    </span>
+
+</nav>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="portada" id="inicio">
+
+            <img
+                src="../IMG/Plaza-barrios-san-salvador.png"
+                alt="Fiestas Agostinas en honor al Divino Salvador del Mundo"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Fe, cultura y tradición de El Salvador</p>
+
+                <h1>
+                    Fiestas
+                    <span class="destacado">Agostinas</span>
+                </h1>
+
+                <a href="#origen" class="boton">
+                    Explorar la guía
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BIENVENIDA -->
+        <section class="bienvenida contenedor" id="origen">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Una celebración llena de fe, cultura y tradición</h2>
+
+                    <p>
+                        Las Fiestas Agostinas son una de las celebraciones más importantes
+                        de El Salvador y se realizan principalmente en la ciudad de San Salvador
+                        en honor al Divino Salvador del Mundo, patrono de la capital.
+                        Durante estas festividades se combinan las actividades religiosas,
+                        culturales, recreativas y familiares, convirtiendo a la ciudad en
+                        un punto de encuentro para miles de salvadoreños.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+                    <img
+                        src="../IMG/fiestasDelDivinosalvador.jpg"
+                        alt="Procesión del Divino Salvador del Mundo"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRADICIONES -->
+        <section class="seccion tradiciones" id="tradiciones">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Tradiciones de las Fiestas Agostinas</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Conoce algunas de las actividades y tradiciones más representativas
+                    de esta celebración salvadoreña.
+                </p>
+
+
+                <div class="tarjetas">
+
+                    <!-- TARJETA 1 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/BajadaDelNiño.png"
+                            alt="Bajada del Divino Salvador del Mundo"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>La Bajada</h3>
+
+                            <p>
+                                Uno de los momentos religiosos más importantes de las
+                                Fiestas Agostinas es la tradicional Bajada del Divino
+                                Salvador del Mundo. Esta ceremonia representa la
+                                Transfiguración de Jesús y reúne a numerosos fieles
+                                en el centro de San Salvador.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 2 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/correo.jpeg"
+                            alt="Actividades de las Fiestas Agostinas"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Actividades y diversión</h3>
+
+                            <p>
+                                Durante las fiestas se realizan diferentes actividades
+                                para toda la familia, incluyendo juegos mecánicos,
+                                conciertos, eventos culturales, presentaciones
+                                artísticas y espacios de entretenimiento.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 3 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/fiestasDelDivinosalvador.jpg"
+                            alt="Procesión del Divino Salvador del Mundo"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Celebración religiosa</h3>
+
+                            <p>
+                                La celebración religiosa ocupa un lugar central en
+                                las fiestas. Las procesiones, misas y actos de fe
+                                permiten a los salvadoreños expresar su devoción
+                                al Divino Salvador del Mundo.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LUGARES -->
+        <section class="seccion lugares fondo-claro" id="lugares">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Dónde vivir las Fiestas Agostinas</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    San Salvador es el principal escenario de estas celebraciones,
+                    aunque también se realizan actividades relacionadas con las
+                    fiestas en diferentes lugares del país.
+                </p>
+
+
+                <div class="tarjetas">
+
+                    <!-- SAN SALVADOR -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/el salvador.jpg"
+                            alt="San Salvador durante las Fiestas Agostinas"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>San Salvador</h3>
+
+                            <p>
+                                La capital salvadoreña es el principal centro de las
+                                Fiestas Agostinas. En sus calles y espacios públicos
+                                se desarrollan actividades religiosas, culturales
+                                y recreativas para visitantes y familias.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                San Salvador, El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=San+Salvador+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CENTRO HISTÓRICO -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/Plaza-barrios-san-salvador.png"
+                            alt="Centro Histórico de San Salvador"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Centro Histórico</h3>
+
+                            <p>
+                                El Centro Histórico de San Salvador es uno de los
+                                lugares relacionados con las principales actividades
+                                religiosas de la celebración. Sus calles reciben
+                                procesiones y diferentes expresiones de la cultura
+                                salvadoreña.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                Centro Histórico de San Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=Centro+Historico+San+Salvador+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FERIA -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/fiestas-agostinas.jpg"
+                            alt="Feria de las Fiestas Agostinas"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Feria y espacios recreativos</h3>
+
+                            <p>
+                                Las actividades recreativas forman parte importante
+                                de las Fiestas Agostinas. Los visitantes pueden
+                                disfrutar de juegos, gastronomía, música y diferentes
+                                espacios de entretenimiento durante la temporada.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                San Salvador, El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=San+Salvador+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita a las Fiestas Agostinas</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige el día del evento, selecciona una tour operadora, un guía o el transporte, indica el número de personas y agrega tu reserva al carrito.
+                </p>
+
+
+                <!-- ========== 1 DE AGOSTO · ALBORADA Y DESFILE DEL CORREO ========== -->
+                <h3 class="reservas-grupo">1 de agosto · Alborada y Desfile del Correo</h3>
+
+                <p class="subtitulo">
+                    Inicio de las fiestas: alborada en Plaza Salvador del Mundo y desfile por la mañana.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="agostinas-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Alborada y Desfile del Correo en San Salvador"
+                             data-precio="15"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/correo.jpeg"
+                                 alt="Desfile del Correo de las Fiestas Agostinas"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Alborada y Desfile del Correo en San Salvador</h4>
+                            <p>Salida temprano para vivir la alborada y ubicarte en un buen punto para ver el desfile.</p>
+
+                            <p class="reserva-precio">$15 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-01" min="2027-08-01" max="2027-08-01" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-02"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía local por el Centro Histórico"
+                             data-precio="25"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Plaza-barrios-san-salvador.png"
+                                 alt="Centro Histórico de San Salvador"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía local por el Centro Histórico</h4>
+                            <p>Recorrido a pie por la Plaza Barrios, la Catedral y los alrededores durante el día de apertura.</p>
+
+                            <p class="reserva-precio">$25 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-01" min="2027-08-01" max="2027-08-01" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-03"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido hacia San Salvador"
+                             data-precio="8"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido hacia San Salvador</h4>
+                            <p>Salida temprano para llegar a tiempo a la alborada, con regreso por la tarde.</p>
+
+                            <p class="reserva-precio">$8 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-01" min="2027-08-01" max="2027-08-01" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== DEL 2 AL 4 DE AGOSTO · FERIA Y ACTIVIDADES ========== -->
+                <h3 class="reservas-grupo">Del 2 al 4 de agosto · Feria y actividades</h3>
+
+                <p class="subtitulo">
+                    Días de feria, música en vivo y espectáculos nocturnos en la capital. Elige el día que prefieras.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="agostinas-04"
+                             data-tipo="Tour operadora"
+                             data-nombre="Noche de feria, música y pirotecnia"
+                             data-precio="20"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/fiestas-agostinas.jpg"
+                                 alt="Feria de las Fiestas Agostinas"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Noche de feria, música y pirotecnia</h4>
+                            <p>Visita guiada a la feria por la tarde y noche, con tiempo para juegos, comida y espectáculos.</p>
+
+                            <p class="reserva-precio">$20 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-02" min="2027-08-02" max="2027-08-04">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-05"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía bilingüe (español e inglés)"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/el salvador.jpg"
+                                 alt="San Salvador durante las Fiestas Agostinas"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía bilingüe (español e inglés)</h4>
+                            <p>Ideal para visitantes extranjeros. Explicaciones en dos idiomas durante el recorrido.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-02" min="2027-08-02" max="2027-08-04">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-06"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado ida y vuelta"
+                             data-precio="50"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado ida y vuelta</h4>
+                            <p>Vehículo con conductor para ir y volver de la feria sin preocuparte por el tráfico.</p>
+
+                            <p class="reserva-precio">$50 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-02" min="2027-08-02" max="2027-08-04">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== 5 DE AGOSTO · PROCESIONES Y LA BAJADA ========== -->
+                <h3 class="reservas-grupo">5 de agosto · Procesiones y la Bajada</h3>
+
+                <p class="subtitulo">
+                    Misas y procesiones durante el día y la Bajada del Divino Salvador del Mundo por la tarde.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="agostinas-07"
+                             data-tipo="Tour operadora"
+                             data-nombre="Ruta de procesiones y la Bajada del Divino Salvador"
+                             data-precio="20"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/BajadaDelNiño.png"
+                                 alt="Bajada del Divino Salvador del Mundo"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Ruta de procesiones y la Bajada del Divino Salvador</h4>
+                            <p>Acompañamiento durante las procesiones y ubicación para presenciar la Bajada.</p>
+
+                            <p class="reserva-precio">$20 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-05" min="2027-08-05" max="2027-08-05" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-08"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía de tradiciones religiosas"
+                             data-precio="25"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/fiestasDelDivinosalvador.jpg"
+                                 alt="Procesión del Divino Salvador del Mundo"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía de tradiciones religiosas</h4>
+                            <p>Explicación del significado de la Transfiguración y de cada acto religioso del día.</p>
+
+                            <p class="reserva-precio">$25 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-05" min="2027-08-05" max="2027-08-05" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-09"
+                             data-tipo="Transporte"
+                             data-nombre="Bus turístico para grupos"
+                             data-precio="120"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-bus.jpg"
+                                 alt="Bus turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Bus turístico para grupos</h4>
+                            <p>Para parroquias, familias grandes o grupos de amigos. Reserva con anticipación.</p>
+
+                            <p class="reserva-precio">$120 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-05" min="2027-08-05" max="2027-08-05" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="30" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== 6 DE AGOSTO · FIESTA PRINCIPAL DEL DIVINO SALVADOR ========== -->
+                <h3 class="reservas-grupo">6 de agosto · Fiesta principal del Divino Salvador</h3>
+
+                <p class="subtitulo">
+                    Día del patrono de San Salvador, con misa solemne y veneración de la imagen.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="agostinas-10"
+                             data-tipo="Tour operadora"
+                             data-nombre="Misa solemne y recorrido por el Centro Histórico"
+                             data-precio="15"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Plaza-barrios-san-salvador.png"
+                                 alt="Centro Histórico de San Salvador"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Misa solemne y recorrido por el Centro Histórico</h4>
+                            <p>Participación en la misa del día principal y caminata por el centro de la ciudad.</p>
+
+                            <p class="reserva-precio">$15 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-06" min="2027-08-06" max="2027-08-06" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-11"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía fotográfico de la celebración"
+                             data-precio="35"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/el salvador.jpg"
+                                 alt="San Salvador durante las Fiestas Agostinas"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía fotográfico de la celebración</h4>
+                            <p>Te lleva a los mejores puntos para fotografiar la celebración respetando los actos religiosos.</p>
+
+                            <p class="reserva-precio">$35 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-06" min="2027-08-06" max="2027-08-06" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="agostinas-12"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido desde y hacia San Salvador"
+                             data-precio="8"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido desde y hacia San Salvador</h4>
+                            <p>Viaje de ida y vuelta con salida por la mañana.</p>
+
+                            <p class="reserva-precio">$8 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-08-06" min="2027-08-06" max="2027-08-06" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="banda-cierre">
+            <p class="frase">Vive la fe de las <span class="destacado">Fiestas Agostinas</span></p>
+            <p class="lema">🕊️ Tradición que une a San Salvador</p>
+        </div>
+
+        <div class="footer-contenido">
+
+            <div class="footer-columna footer-marca">
+
+                <h3>Descubre El Salvador</h3>
+
+                <p>
+                    Te invitamos a descubrir la belleza,
+                    cultura y calidez de nuestra gente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>INFORMACIÓN</h3>
+
+                <a href="Acercade.html">Acerca de El Salvador</a>
+            <a href="consejos.html">Consejos de viaje</a>
+            <a href="hospedaje.html">Hospedaje</a>
+            <a href="transporte.html">Transporte</a>
+            <a href="blog.html">Blog</a>
+            <a href="#reservas">Reservas</a>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>CONTACTOS</h3>
+
+                <p>📞 +503 6869-1065</p>
+                <p>✉ descubreelsalvador@gmail.com</p>
+                <p>📍 San Salvador, El Salvador</p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>REDES SOCIALES</h3>
+
+                <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 Descubre El Salvador. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+/* ================================
+   Página de registro
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kaushan+Script&family=Oswald:wght@500;600;700&display=swap');
+:root {
+  --gold:#f5ad13;
+  --navy:#02274e;
+  --ink:#0a2342;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px 20px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 1000;
+    box-shadow: none;
+    transition: background .3s ease, box-shadow .3s ease;
+    text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none;
+  background:#02274e;
+  color:#fff;
+  border-radius: 999px;
+  padding: 12px;
+}
+
+
+.login-wrap {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 20px 40px;
+  box-sizing: border-box;
+  background: url('../IMG/paisaje.jpg') center/cover no-repeat, var(--navy);
+}
+
+/* Capa oscura sobre la imagen de fondo */
+.login-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(2,39,78,.45) 0%, rgba(2,20,40,.85) 100%);
+}
+
+/* El texto de bienvenida ahora va a la izquierda, sobre el fondo */
+.login-visual {
+  position: static;
+  background: none;
+  color: #fff;
+  padding: 0 40px;
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-visual-overlay {
+  display: none;
+}
+
+/* Tarjeta del formulario al frente */
+.login-panel {
+  flex: 0 0 auto;
+  background: rgba(255,255,255,.96);
+  border-radius: 16px;
+  padding: 32px 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.35);
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+}
+.login-form {
+  max-width: 100%;
+}
+
+@media (max-width: 860px) {
+  .login-wrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding: 90px 16px 40px;
+  }
+  .login-visual {
+    padding: 0 8px;
+    text-align: center;
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+  .login-visual-texto {
+    display: none;
+  }
+  .login-panel {
+    padding: 32px 22px;
+  }
+}
+
+/* ===== Versión compacta ===== */
+.login-wrap {
+  padding: 70px 20px 20px;
+}
+
+.login-panel {
+  padding: 24px 28px;
+  max-width: 420px;
+}
+
+.login-form h2 {
+  font-size: 26px;
+  margin: 0 0 2px;
+}
+
+.login-sub {
+  margin: 0 0 14px;
+  font-size: 13px;
+}
+
+.campo {
+  margin-bottom: 8px;
+}
+
+.campo span {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.campo input {
+  padding: 9px 12px;
+  font-size: 14px;
+}
+
+.mensaje-error {
+  min-height: 0;
+  margin-top: 4px;
+}
+
+.mensaje-error:empty {
+  display: none;
+}
+
+.boton-entrar {
+  padding: 11px 20px;
+  margin-top: 6px;
+}
+
+.login-registro {
+  margin: 14px 0 0;
+  font-size: 13px;
+}
+
+@media (max-height: 760px) {
+  .login-visual-texto {
+    display: none;
+  }
+}
+
+.login-visual-eyebrow {
+  font-family: 'Kaushan Script', cursive;
+  color: var(--gold);
+  font-size: 22px;
+  margin: 0 0 0px;
+}
+.login-visual-titulo {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: .5px;
+  margin: 0 0 16px;
+  max-width: 420px;
+}
+.login-visual-titulo span {
+  display: block;
+  font-family: 'Kaushan Script', cursive;
+  color: var(--gold);
+  text-transform: none;
+  font-size: .85em;
+  font-weight: 400;
+}
+.login-visual-texto {
+  font-family: 'DM Sans', Arial, sans-serif;
+  max-width: 360px;
+  font-size: 17px;
+  line-height: 1.55;
+  color: #e7edf3;
+}
+
+
+.login-form h2 {
+  font-family: Oswald, sans-serif;
+  color: var(--ink);
+  font-size: 30px;
+  margin: 0 0 6px;
+}
+.login-sub {
+  color: #62707d;
+  margin: 0 0 28px;
+  font-size: 14px;
+}
+.campo {
+  display: block;
+  margin-bottom: 14px;
+}
+.campo span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.campo input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid #d7dee4;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color .2s ease;
+}
+.campo input:focus {
+  outline: none;
+  border-color: var(--navy);
+}
+.campo-clave {
+  position: relative;
+}
+.campo-clave input {
+  padding-right: 60px;
+}
+.ver-clave {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 8px;
+  margin: 0;
+  cursor: pointer;
+}
+.ver-clave:hover {
+  background: none;
+  color: var(--gold);
+}
+
+.mensaje-error {
+  display: block;
+  color: #e63946;
+  font-size: 12px;
+  margin-top: 6px;
+  min-height: 16px;
+}
+
+.campo-invalido {
+  border-color: #e63946 !important;
+}
+
+.login-opciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 0 22px;
+  font-size: 13px;
+}
+.recordarme {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4a5761;
+  cursor: pointer;
+}
+.recordarme input {
+  margin: 0;
+  accent-color: var(--navy);
+}
+.olvide-clave {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+}
+.olvide-clave:hover {
+  color: var(--gold);
+}
+.boton-entrar {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--navy);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 20px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.boton-entrar:hover {
+  background: #011c3d;
+}
+.separador {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9aa7b0;
+  font-size: 12px;
+  margin: 22px 0;
+}
+.separador::before, .separador::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e2e8ed;
+}
+.separador span {
+  padding: 0 12px;
+}
+.boton-google {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  color: var(--ink);
+  border: 1.5px solid #d7dee4;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color .2s ease, background .2s ease;
+}
+.boton-google:hover {
+  background: #f5f7f9;
+  border-color: #c2ccd3;
+}
+.login-registro {
+  text-align: center;
+  margin: 26px 0 0;
+  font-size: 14px;
+  color: #4a5761;
+}
+.login-registro a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+.login-registro a:hover {
+  color: var(--gold);
+}
+@media (max-width: 860px) {
+  .login-wrap {
+    grid-template-columns: 1fr;
+  }
+  .login-visual {
+    min-height: 280px;
+    padding: 120px 28px 32px;
+  }
+  .login-panel {
+    padding: 48px 24px 60px;
+  }
+}
+
+/* 
+   Responsive: el botón REGRESAR no sigue el scroll
+ */
+@media (max-width: 860px) {
+  .menu {
+    position: absolute;
+  }
+}

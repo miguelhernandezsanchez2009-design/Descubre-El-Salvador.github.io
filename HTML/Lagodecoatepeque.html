@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lago de Coatepeque - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+</head>
+
+<body>
+
+    <nav class="menu" aria-label="Navegacion principal">
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="../index.html">INICIO</a>
+        <a href="Destinos.html" aria-current="page">DESTINOS</a>
+        <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+        <a href="gastronomia.html">GASTRONOMÍA</a>
+        <a href="eventos.html">EVENTOS</a>
+    </div>
+
+    <span class="nav-iconos">
+        <div class="buscador-nav">
+            <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+            <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+            </form>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                </svg>
+            </a>
+
+            <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                <p>Sesión activa como:</p>
+                <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+            </div>
+        </div>
+
+        <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="carrito-contador" id="carritoContador">0</span>
+        </a>
+    </span>
+
+</nav>
+
+    <main>
+
+        <section class="portada" id="inicio">
+
+            <img
+                src="../IMG/images (3).jpeg"
+                alt="Lago de Coatepeque en El Salvador"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Uno de los paisajes naturales más impresionantes de El Salvador</p>
+
+                <h1>
+                    Lago de
+                    <span class="destacado">Coatepeque</span>
+                </h1>
+
+                <a href="#hospedaje" class="boton">Explorar la guía</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="bienvenida contenedor">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Un impresionante lago de origen volcánico</h2>
+
+                    <p>
+                        El Lago de Coatepeque es un lago de origen volcánico
+                        ubicado en el departamento de Santa Ana. Sus aguas,
+                        rodeadas de montañas y abundante vegetación, forman
+                        uno de los paisajes naturales más reconocidos de
+                        El Salvador. Es un destino ideal para disfrutar de
+                        actividades acuáticas, naturaleza y hermosas vistas.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+
+                    <img
+                        src="../IMG/images (3).jpeg"
+                        alt="Lago de Coatepeque"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion tradiciones" id="hospedaje">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+
+                    <span class="raya"></span>
+
+                    <h2>Experiencias en el Lago</h2>
+
+                    <span class="raya"></span>
+
+                </div>
+
+                <p class="subtitulo">
+                    Descubre algunas de las actividades que puedes realizar
+                    durante una visita al Lago de Coatepeque.
+                </p>
+
+
+                <div class="tarjetas">
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/kayak.jpg"
+                            alt="Kayak en el Lago de Coatepeque"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Kayak</h3>
+
+                            <p>
+                                El lago ofrece la posibilidad de realizar
+                                actividades acuáticas como el kayak,
+                                permitiendo disfrutar de sus aguas y observar
+                                desde otra perspectiva el paisaje natural
+                                que rodea al lago.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/lago de coatepeque.jpeg"
+                            alt="Paseo en lancha en el Lago de Coatepeque"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Paseo en lancha</h3>
+
+                            <p>
+                                Los recorridos en lancha permiten conocer
+                                diferentes zonas del lago y disfrutar de
+                                sus paisajes. También ofrecen una forma
+                                diferente de apreciar las montañas y
+                                vegetación que rodean el agua.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/buseo-coatepeque.webp"
+                            alt="Buceo en el Lago de Coatepeque"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Buceo y actividades acuáticas</h3>
+
+                            <p>
+                                El Lago de Coatepeque es conocido por ofrecer
+                                diferentes actividades acuáticas, entre ellas
+                                el buceo. También se pueden practicar otras
+                                actividades como pesca y paseos en el agua.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion gastronomia fondo-claro" id="comida">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+
+                    <span class="raya"></span>
+
+                    <h2>Dónde disfrutar en Coatepeque</h2>
+
+                    <span class="raya"></span>
+
+                </div>
+
+                <p class="subtitulo">
+                    Disfruta de la gastronomía, los paisajes y diferentes
+                    espacios turísticos ubicados alrededor del lago.
+                </p>
+
+
+                <div class="tarjetas">
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/restaurante-lago-coatepeque.jpg"
+                            alt="Restaurante en el Lago de Coatepeque"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Restaurantes con vista al lago</h3>
+
+                            <p>
+                                En los alrededores del Lago de Coatepeque
+                                existen diferentes restaurantes donde puedes
+                                disfrutar de alimentos y bebidas mientras
+                                observas el paisaje.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Ubicación:</strong>
+                                Lago de Coatepeque, Santa Ana.
+                                <br>
+
+                                <strong>Recomendación:</strong>
+                                Consulta los horarios directamente con
+                                cada establecimiento.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/atardecer-lago-coatepeque.jpg"
+                            alt="Atardecer en el Lago de Coatepeque"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Atardeceres y paisajes</h3>
+
+                            <p>
+                                Los alrededores del lago ofrecen diferentes
+                                puntos para disfrutar de las vistas panorámicas,
+                                observar el paisaje y tomar fotografías.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Ideal para:</strong>
+                                Fotografías y descanso.
+                                <br>
+
+                                <strong>Consejo:</strong>
+                                Visitar los miradores y espacios con
+                                vista hacia el lago.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/naturaleza-lago-coatepeque.jpg"
+                            alt="Naturaleza alrededor del Lago de Coatepeque"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Naturaleza y senderismo</h3>
+
+                            <p>
+                                Los alrededores del lago permiten disfrutar
+                                de la naturaleza y realizar actividades como
+                                senderismo y bicicleta de montaña, mientras
+                                se observan las vistas panorámicas de la zona.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Actividad:</strong>
+                                Ecoturismo.
+                                <br>
+
+                                <strong>Recomendación:</strong>
+                                Respetar la naturaleza y mantener limpio
+                                el entorno.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita al Lago de Coatepeque</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige una tour operadora, un guía o el transporte,
+                    indica la fecha y el número de personas, y agrega tu
+                    reserva al carrito.
+                </p>
+
+
+                <!-- ========== TOUR OPERADORAS ========== -->
+                <h3 class="reservas-grupo">Tour operadoras</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-tour-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Paseo en lancha por el Lago de Coatepeque"
+                             data-precio="20"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/lago de coatepeque.jpeg"
+                                 alt="Paseo en lancha en el Lago de Coatepeque"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Paseo en lancha por el Lago de Coatepeque</h4>
+                            <p>Recorrido en lancha por distintas zonas del lago para apreciar las montañas y la vegetación que lo rodean.</p>
+
+                            <p class="reserva-precio">$20 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-tour-02"
+                             data-tipo="Tour operadora"
+                             data-nombre="Kayak en el lago al atardecer"
+                             data-precio="25"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/kayak.jpg"
+                                 alt="Kayak en el Lago de Coatepeque"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Kayak en el lago al atardecer</h4>
+                            <p>Salida en kayak con equipo incluido para disfrutar del lago y del atardecer desde el agua.</p>
+
+                            <p class="reserva-precio">$25 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-tour-03"
+                             data-tipo="Tour operadora"
+                             data-nombre="Experiencia de buceo en el lago"
+                             data-precio="60"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/buseo-coatepeque.webp"
+                                 alt="Buceo en el Lago de Coatepeque"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Experiencia de buceo en el lago</h4>
+                            <p>Inmersión guiada con instructor y equipo incluido, pensada para quienes quieren probar el buceo.</p>
+
+                            <p class="reserva-precio">$60 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="8" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== GUÍAS TURÍSTICOS ========== -->
+                <h3 class="reservas-grupo">Guías turísticos</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-guia-01"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía de senderismo y miradores"
+                             data-precio="25"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/naturaleza-lago-coatepeque.jpg"
+                                 alt="Naturaleza alrededor del Lago de Coatepeque"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía de senderismo y miradores</h4>
+                            <p>Caminata guiada por los alrededores del lago, con paradas en miradores y explicación de la naturaleza de la zona.</p>
+
+                            <p class="reserva-precio">$25 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-guia-02"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía bilingüe (español e inglés)"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/images (3).jpeg"
+                                 alt="Lago de Coatepeque"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía bilingüe (español e inglés)</h4>
+                            <p>Ideal para visitantes extranjeros. Explicaciones en dos idiomas sobre el origen volcánico del lago y su entorno.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-guia-03"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía fotográfico de atardeceres"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/atardecer-lago-coatepeque.jpg"
+                                 alt="Atardecer en el Lago de Coatepeque"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía fotográfico de atardeceres</h4>
+                            <p>Te lleva a los mejores puntos para fotografiar el lago, las montañas y el atardecer.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== TRANSPORTE ========== -->
+                <h3 class="reservas-grupo">Transporte</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-transporte-01"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido desde Santa Ana"
+                             data-precio="8"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido desde Santa Ana</h4>
+                            <p>Viaje de ida y vuelta hasta el lago, con salida por la mañana y regreso por la tarde.</p>
+
+                            <p class="reserva-precio">$8 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-transporte-02"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado desde San Salvador"
+                             data-precio="60"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado desde San Salvador</h4>
+                            <p>Vehículo para tu grupo, con conductor disponible durante tu visita al lago.</p>
+
+                            <p class="reserva-precio">$60 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="coatepeque-transporte-03"
+                             data-tipo="Transporte"
+                             data-nombre="Bus turístico para grupos"
+                             data-precio="130"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-bus.jpg"
+                                 alt="Bus turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Bus turístico para grupos</h4>
+                            <p>Para excursiones escolares, familias grandes o grupos de amigos. Reserva con anticipación.</p>
+
+                            <p class="reserva-precio">$130 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="30" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+
+
+    <footer class="footer footer-unificado">
+
+        <div class="banda-cierre">
+
+            <p class="frase">
+                Descubre la belleza del
+                <span class="destacado">Lago de Coatepeque</span>
+            </p>
+
+            <p class="lema">
+                🌊 Naturaleza, aventura y paisajes de El Salvador
+            </p>
+
+        </div>
+
+
+        <div class="footer-contenido">
+
+
+            <div class="footer-columna footer-marca">
+
+                <h3>Descubre El Salvador</h3>
+
+                <p>
+                    Te invitamos a descubrir la belleza,
+                    cultura y calidez de nuestra gente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>INFORMACIÓN</h3>
+
+                <a href="Acercade.html">Acerca de El Salvador</a>
+                <a href="consejos.html">Consejos de viaje</a>
+                <a href="hospedaje.html">Hospedaje</a>
+                <a href="transporte.html">Transporte</a>
+                <a href="blog.html">Blog</a>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>CONTACTOS</h3>
+
+                <p>📞 +503 6869-1065</p>
+                <p>✉descubreelsalvador@gmail.com</p>
+                <p>📍 Sonsonate, El Salvador</p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>REDES SOCIALES</h3>
+
+                <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 Descubre El Salvador.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <a id="whatsappFlotante"
+       href="#"
+       class="whatsapp-flotante"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Escríbenos por WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor" aria-hidden="true">
+            <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.68 4.523 1.857 6.36L4 29l7.86-1.816A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.664 1.078 1.09-4.55-.232-.371A9.77 9.77 0 0 1 5.818 15c0-5.613 4.57-10.182 10.183-10.182S26.184 9.387 26.184 15 20.615 24.818 16.001 24.818zm5.606-7.62c-.307-.154-1.817-.897-2.099-.998-.281-.103-.486-.154-.69.154-.205.307-.792.997-.972 1.202-.179.205-.358.23-.664.077-.307-.154-1.296-.478-2.469-1.523-.913-.814-1.529-1.82-1.708-2.128-.179-.307-.019-.473.135-.626.138-.138.307-.358.46-.537.154-.18.205-.307.307-.512.103-.205.051-.384-.026-.538-.077-.154-.69-1.663-.945-2.278-.249-.598-.502-.517-.69-.526l-.588-.01c-.205 0-.537.077-.818.384-.281.307-1.073 1.049-1.073 2.559 0 1.51 1.098 2.968 1.25 3.173.154.205 2.16 3.298 5.234 4.625.731.316 1.301.505 1.746.646.733.233 1.4.2 1.927.121.588-.088 1.817-.743 2.073-1.46.256-.717.256-1.332.179-1.46-.077-.128-.281-.205-.588-.359z"/>
+        </svg>
+    </a>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+
+</html>

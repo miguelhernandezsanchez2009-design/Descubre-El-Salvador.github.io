@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playa El Tunco - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+</head>
+
+<body>
+
+    <nav class="menu" aria-label="Navegacion principal">
+
+        <!-- Botón hamburguesa  -->
+        <button type="button" class="menu-toggle" id="menuToggle"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="menu-links" id="menuLinks">
+            <a href="../index.html">INICIO</a>
+            <a href="Destinos.html">DESTINOS</a>
+            <a href="lugaresdestacados.html" aria-current="page">LUGARES DESTACADOS</a>
+            <a href="gastronomia.html">GASTRONOMÍA</a>
+            <a href="eventos.html">EVENTOS</a>
+        </div>
+
+        <span class="nav-iconos">
+            <div class="buscador-nav">
+                <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                    <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+                </form>
+            </div>
+
+            <div class="user-menu">
+                <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                    </svg>
+                </a>
+
+                <!-- Mini tarjeta, oculta por defecto -->
+                <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                    <p>Sesión activa como:</p>
+                    <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                    <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+                </div>
+            </div>
+
+            <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="carrito-contador" id="carritoContador">0</span>
+            </a>
+        </span>
+
+    </nav>
+
+
+    <main>
+
+        <section class="portada" id="inicio">
+
+            <img
+                src="../IMG/images (1).jpeg"
+                alt="Playa El Tunco en El Salvador"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Uno de los destinos turísticos más conocidos de El Salvador</p>
+
+                <h1>
+                    Playa
+                    <span class="destacado">El Tunco</span>
+                </h1>
+
+                <a href="#hospedaje" class="boton">Explorar la guía</a>
+
+            </div>
+
+        </section>
+
+
+        <section class="bienvenida contenedor">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Un destino lleno de playa, surf y atardeceres</h2>
+
+                    <p>
+                        Playa El Tunco es uno de los destinos turísticos más
+                        reconocidos de El Salvador. Se encuentra en el departamento
+                        de La Libertad y es conocida por sus paisajes, sus
+                        formaciones rocosas, sus olas y sus hermosos atardeceres.
+                        Es un lugar ideal para disfrutar de la playa, practicar
+                        surf, caminar y conocer diferentes restaurantes y
+                        establecimientos turísticos.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+                    <img src="../IMG/images (1).jpeg" alt="Playa El Tunco">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion tradiciones" id="hospedaje">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>¿Qué hacer en El Tunco?</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Descubre algunas de las actividades que puedes realizar
+                    durante tu visita a Playa El Tunco.
+                </p>
+
+                <div class="tarjetas">
+
+                    <article class="tarjeta">
+
+                        <img class="tarjeta-img"
+                             src="../IMG/surfeo.jpg"
+                             alt="Surf en Playa El Tunco"
+                             loading="lazy">
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Surf</h3>
+
+                            <p>
+                                El Tunco es conocido por sus condiciones para
+                                practicar surf. Sus olas atraen tanto a personas
+                                que desean aprender este deporte como a
+                                surfistas con experiencia.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img class="tarjeta-img"
+                             src="../IMG/el-tunco-atardecer.jpg"
+                             alt="Atardecer en Playa El Tunco"
+                             loading="lazy">
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Atardeceres</h3>
+
+                            <p>
+                                Los atardeceres son uno de los atractivos
+                                de Playa El Tunco. Puedes caminar por la playa,
+                                observar el océano y disfrutar del paisaje
+                                mientras cae el sol.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img class="tarjeta-img"
+                             src="../IMG/el-tunco-explorar.jpg"
+                             alt="Formación rocosa de El Tunco"
+                             loading="lazy">
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Explorar la playa</h3>
+
+                            <p>
+                                La playa cuenta con formaciones rocosas y
+                                diferentes espacios para caminar, tomar
+                                fotografías y disfrutar del paisaje natural
+                                de la costa salvadoreña.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion gastronomia fondo-claro" id="comida">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Dónde disfrutar en El Tunco</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Encuentra diferentes opciones para comer, descansar
+                    y disfrutar de tu visita a este destino turístico.
+                </p>
+
+                <div class="tarjetas">
+
+                    <article class="tarjeta">
+
+                        <img class="tarjeta-img"
+                             src="../IMG/el-tunco-restaurante.jpg"
+                             alt="Restaurante en El Tunco"
+                             loading="lazy">
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Restaurantes</h3>
+
+                            <p>
+                                En los alrededores de Playa El Tunco puedes
+                                encontrar restaurantes y negocios de comida
+                                donde disfrutar diferentes platillos y bebidas
+                                mientras conoces la zona.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Ubicación:</strong>
+                                Playa El Tunco, La Libertad.
+                                <br>
+
+                                <strong>Recomendación:</strong>
+                                Consulta los horarios directamente con
+                                cada establecimiento.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img class="tarjeta-img"
+                             src="../IMG/el-tunco-hoteles.jpg"
+                             alt="Hoteles en Playa El Tunco"
+                             loading="lazy">
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Hospedaje</h3>
+
+                            <p>
+                                La zona cuenta con diferentes opciones de
+                                hospedaje para quienes desean pasar más tiempo
+                                disfrutando de la playa y de las actividades
+                                turísticas de El Tunco.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Ubicación:</strong>
+                                El Tunco, La Libertad.
+                                <br>
+
+                                <strong>Horario:</strong>
+                                Depende del establecimiento.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="tarjeta">
+
+                        <img class="tarjeta-img"
+                             src="../IMG/El-Tunco-en-la-noche.jpg"
+                             alt="Vida nocturna en El Tunco"
+                             loading="lazy">
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Vida nocturna</h3>
+
+                            <p>
+                                Durante la tarde y la noche, El Tunco ofrece
+                                diferentes opciones de entretenimiento,
+                                restaurantes y establecimientos para disfrutar
+                                después de un día en la playa.
+                            </p>
+
+                            <p class="datos">
+
+                                <strong>Ubicación:</strong>
+                                Playa El Tunco, La Libertad.
+                                <br>
+
+                                <strong>Recomendación:</strong>
+                                Verifica los horarios antes de visitar
+                                cada establecimiento.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita a El Tunco</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige una tour operadora, un guía o el transporte,
+                    indica la fecha y el número de personas, y agrega tu
+                    reserva al carrito.
+                </p>
+
+
+                <!-- ========== TOUR OPERADORAS ========== -->
+                <h3 class="reservas-grupo">Tour operadoras</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="tunco-tour-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Día de playa en El Tunco con almuerzo"
+                             data-precio="35"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/images (1).jpeg"
+                                 alt="Playa El Tunco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Día de playa en El Tunco con almuerzo</h4>
+                            <p>Tiempo libre en la playa, almuerzo en un restaurante de la zona y regreso por la tarde.</p>
+
+                            <p class="reserva-precio">$35 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tunco-tour-02"
+                             data-tipo="Tour operadora"
+                             data-nombre="Tour de atardecer y fotografía en la costa"
+                             data-precio="30"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/el-tunco-atardecer.jpg"
+                                 alt="Atardecer en Playa El Tunco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Tour de atardecer y fotografía en la costa</h4>
+                            <p>Recorrido por las formaciones rocosas y los mejores puntos para ver y fotografiar el atardecer.</p>
+
+                            <p class="reserva-precio">$30 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tunco-tour-03"
+                             data-tipo="Tour operadora"
+                             data-nombre="Aventura de costa: El Tunco y playas cercanas"
+                             data-precio="60"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/el-tunco-explorar.jpg"
+                                 alt="Formación rocosa de El Tunco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Aventura de costa: El Tunco y playas cercanas</h4>
+                            <p>Día completo visitando El Tunco y otras playas de La Libertad, con paradas para comer y nadar.</p>
+
+                            <p class="reserva-precio">$60 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== GUÍAS TURÍSTICOS ========== -->
+                <h3 class="reservas-grupo">Guías turísticos</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="tunco-guia-01"
+                             data-tipo="Guía turístico"
+                             data-nombre="Instructor de surf (clase de 2 horas)"
+                             data-precio="40"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/surfeo.jpg"
+                                 alt="Surf en Playa El Tunco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Instructor de surf (clase de 2 horas)</h4>
+                            <p>Clase para principiantes o intermedios, con instructor local y tabla incluida.</p>
+
+                            <p class="reserva-precio">$40 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="6" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tunco-guia-02"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía local bilingüe (español e inglés)"
+                             data-precio="35"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/el-tunco-restaurante.jpg"
+                                 alt="Zona de restaurantes en El Tunco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía local bilingüe (español e inglés)</h4>
+                            <p>Recorrido por la zona con recomendaciones de restaurantes, tiendas y lugares de interés.</p>
+
+                            <p class="reserva-precio">$35 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tunco-guia-03"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía fotográfico de atardeceres"
+                             data-precio="45"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/el-tunco-atardecer.jpg"
+                                 alt="Atardecer en Playa El Tunco"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía fotográfico de atardeceres</h4>
+                            <p>Te lleva a los mejores puntos de la costa para fotografiar el mar, las rocas y el atardecer.</p>
+
+                            <p class="reserva-precio">$45 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== TRANSPORTE ========== -->
+                <h3 class="reservas-grupo">Transporte</h3>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="tunco-transporte-01"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido desde San Salvador"
+                             data-precio="10"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido desde San Salvador</h4>
+                            <p>Viaje de ida y vuelta hasta El Tunco, con salida por la mañana y regreso por la tarde.</p>
+
+                            <p class="reserva-precio">$10 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tunco-transporte-02"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado desde el aeropuerto"
+                             data-precio="45"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado desde el aeropuerto</h4>
+                            <p>Traslado directo desde el aeropuerto hasta tu hospedaje en El Tunco, con conductor.</p>
+
+                            <p class="reserva-precio">$45 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="tunco-transporte-03"
+                             data-tipo="Transporte"
+                             data-nombre="Bus turístico para grupos"
+                             data-precio="110"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-bus.jpg"
+                                 alt="Bus turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Bus turístico para grupos</h4>
+                            <p>Para excursiones escolares, familias grandes o grupos de amigos. Reserva con anticipación.</p>
+
+                            <p class="reserva-precio">$110 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="30" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+
+
+    <footer class="footer footer-unificado">
+
+        <div class="banda-cierre">
+            <p class="frase">
+                Descubre la belleza de
+                <span class="destacado">El Tunco</span>
+            </p>
+
+            <p class="lema">
+                🏄 Playa, naturaleza y aventura en El Salvador
+            </p>
+        </div>
+
+
+
+        <div class="footer-contenido">
+
+            <div class="footer-columna footer-marca">
+
+                <h3>Descubre El Salvador</h3>
+
+                <p>
+                    Te invitamos a descubrir la belleza,
+                    cultura y calidez de nuestra gente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>INFORMACIÓN</h3>
+
+                <a href="Acercade.html">Acerca de El Salvador</a>
+                <a href="consejos.html">Consejos de viaje</a>
+                <a href="hospedaje.html">Hospedaje</a>
+                <a href="transporte.html">Transporte</a>
+                <a href="blog.html">Blog</a>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>CONTACTOS</h3>
+
+                <p>📞 +503 6869-1065</p>
+                <p>✉descubreelsalvador@gmail.com</p>
+                <p>📍 Sonsonate, El Salvador</p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>REDES SOCIALES</h3>
+
+                <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 Descubre El Salvador.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <a id="whatsappFlotante"
+       href="#"
+       class="whatsapp-flotante"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Escríbenos por WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor" aria-hidden="true">
+            <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.68 4.523 1.857 6.36L4 29l7.86-1.816A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.664 1.078 1.09-4.55-.232-.371A9.77 9.77 0 0 1 5.818 15c0-5.613 4.57-10.182 10.183-10.182S26.184 9.387 26.184 15 20.615 24.818 16.001 24.818zm5.606-7.62c-.307-.154-1.817-.897-2.099-.998-.281-.103-.486-.154-.69.154-.205.307-.792.997-.972 1.202-.179.205-.358.23-.664.077-.307-.154-1.296-.478-2.469-1.523-.913-.814-1.529-1.82-1.708-2.128-.179-.307-.019-.473.135-.626.138-.138.307-.358.46-.537.154-.18.205-.307.307-.512.103-.205.051-.384-.026-.538-.077-.154-.69-1.663-.945-2.278-.249-.598-.502-.517-.69-.526l-.588-.01c-.205 0-.537.077-.818.384-.281.307-1.073 1.049-1.073 2.559 0 1.51 1.098 2.968 1.25 3.173.154.205 2.16 3.298 5.234 4.625.731.316 1.301.505 1.746.646.733.233 1.4.2 1.927.121.588-.088 1.817-.743 2.073-1.46.256-.717.256-1.332.179-1.46-.077-.128-.281-.205-.588-.359z"/>
+        </svg>
+    </a>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+
+</html>

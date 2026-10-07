@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Festival del Jocote - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+</head>
+
+<body>
+
+      <nav class="menu" aria-label="Navegacion principal">
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="../index.html">INICIO</a>
+        <a href="Destinos.html">DESTINOS</a>
+        <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+        <a href="gastronomia.html">GASTRONOMÍA</a>
+        <a href="eventos.html" aria-current="page">EVENTOS</a>
+    </div>
+
+    <span class="nav-iconos">
+        <div class="buscador-nav">
+            <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+            <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+            </form>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                </svg>
+            </a>
+
+            <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                <p>Sesión activa como:</p>
+                <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+            </div>
+        </div>
+
+        <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="carrito-contador" id="carritoContador">0</span>
+        </a>
+    </span>
+
+</nav>
+
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="portada" id="inicio">
+
+            <img
+                src="../IMG/Festival-del-jocote.jpg"
+                alt="Festival del Jocote en El Salvador"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Sabor, tradición y cultura salvadoreña</p>
+
+                <h1>
+                    Festival del
+                    <span class="destacado">Jocote</span>
+                </h1>
+
+                <a href="#origen" class="boton">
+                    Explorar la guía
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BIENVENIDA -->
+        <section class="bienvenida contenedor" id="origen">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Una celebración llena de sabor y tradición</h2>
+
+                    <p>
+                        El Festival del Jocote es una celebración que destaca uno de
+                        los frutos más representativos de El Salvador. Durante el
+                        festival, los visitantes pueden disfrutar de diferentes
+                        variedades de jocote, comidas, bebidas y productos elaborados
+                        con este fruto, además de conocer las tradiciones y costumbres
+                        de las comunidades salvadoreñas.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+                    <img
+                        src="../IMG/Comida-Jocote.png"
+                        alt="Platillos tradicionales elaborados con jocote"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTIVIDADES -->
+        <section class="seccion tradiciones" id="tradiciones">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Actividades del Festival del Jocote</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Disfruta algunas de las experiencias que hacen especial
+                    esta celebración salvadoreña.
+                </p>
+
+
+                <div class="tarjetas">
+
+                    <!-- TARJETA 1 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/Jocote-desgustaciones.jpg"
+                            alt="Jocotes salvadoreños"
+                            loading="lazy"
+                        >
+
+
+                
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Degustación de jocotes</h3>
+
+                            <p>
+                                Los visitantes pueden degustar diferentes
+                                variedades de jocote y conocer los sabores
+                                característicos de este fruto, uno de los
+                                productos tradicionales de El Salvador.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 2 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/Comida-Jocote.png"
+                            alt="Comida elaborada con jocote"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Gastronomía tradicional</h3>
+
+                            <p>
+                                Durante el festival se pueden encontrar
+                                diferentes alimentos, dulces, bebidas y
+                                preparaciones elaboradas a base de jocote,
+                                combinando la gastronomía con las tradiciones
+                                locales.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 3 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/Ventas-Festival-Jocote.jpg"
+                            alt="Festival del Jocote en El Salvador"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Artesanías y productos locales</h3>
+
+                            <p>
+                                El festival también permite conocer productos
+                                elaborados por emprendedores y habitantes de la
+                                zona, promoviendo la cultura, el trabajo local
+                                y las tradiciones salvadoreñas.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LUGARES -->
+        <section class="seccion lugares fondo-claro" id="lugares">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Dónde disfrutar el Festival del Jocote</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    El Festival del Jocote se relaciona especialmente con las
+                    zonas productoras de este fruto, donde los visitantes
+                    pueden disfrutar de la gastronomía, cultura y actividades
+                    de las comunidades.
+                </p>
+
+
+                <div class="tarjetas">
+
+                    <!-- LUGAR 1 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/San-Lorenzo.jpg"
+                            alt="San Lorenzo, Ahuachapán"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>San Lorenzo, Ahuachapán</h3>
+
+                            <p>
+                                San Lorenzo es conocido por su producción de
+                                jocote y por las actividades relacionadas con
+                                este fruto. Es uno de los lugares donde se
+                                puede conocer más sobre la tradición y
+                                producción local.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                San Lorenzo, Ahuachapán, El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=San+Lorenzo+Ahuachapan+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- LUGAR 2 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/jocote-baron.jpg"
+                            alt="Jocote Barón Rojo"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Jocote Barón Rojo</h3>
+
+                            <p>
+                                Esta variedad de jocote es apreciada por su
+                                sabor y características. Las zonas productoras
+                                permiten conocer el cultivo y las diferentes
+                                formas de consumir este tradicional fruto.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                Ahuachapán, El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=Ahuachapan+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- LUGAR 3 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/cultivo-jocotes.jpg"
+                            alt="Cultivos de jocote en El Salvador"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Zonas productoras de jocote</h3>
+
+                            <p>
+                                Diferentes comunidades de El Salvador cultivan
+                                jocote y mantienen viva la tradición de
+                                aprovechar este fruto en alimentos, bebidas y
+                                productos que forman parte de la gastronomía
+                                nacional.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=Jocote+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita al Festival del Jocote</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige el día del evento, selecciona una tour operadora, un guía o el transporte, indica el número de personas y agrega tu reserva al carrito.
+                </p>
+
+
+                <!-- ========== DÍA DEL FESTIVAL · TOUR OPERADORAS ========== -->
+                <h3 class="reservas-grupo">Día del festival · Tour operadoras</h3>
+
+                <p class="subtitulo">
+                    El festival se realiza un domingo de marzo en el parque central de San Lorenzo, desde la mañana. La fecha exacta se confirma cada año, elige el domingo del festival.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="jocote-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Visita al festival con degustación de jocotes"
+                             data-precio="15"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Jocote-desgustaciones.jpg"
+                                 alt="Degustación de jocotes"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Visita al festival con degustación de jocotes</h4>
+                            <p>Día en el festival con degustación de jocotes y productos elaborados con este fruto.</p>
+
+                            <p class="reserva-precio">$15 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="jocote-02"
+                             data-tipo="Tour operadora"
+                             data-nombre="Ruta de las zonas productoras de jocote"
+                             data-precio="25"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/cultivo-jocotes.jpg"
+                                 alt="Cultivos de jocote en El Salvador"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Ruta de las zonas productoras de jocote</h4>
+                            <p>Recorrido por las zonas de cultivo antes de llegar al festival, con explicación de la producción local.</p>
+
+                            <p class="reserva-precio">$25 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="jocote-03"
+                             data-tipo="Tour operadora"
+                             data-nombre="Ruta gastronómica: platillos y postres de jocote"
+                             data-precio="20"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Comida-Jocote.png"
+                                 alt="Platillos tradicionales elaborados con jocote"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Ruta gastronómica: platillos y postres de jocote</h4>
+                            <p>Recorrido por los puestos del festival para probar platillos, dulces, conservas y bebidas elaboradas con jocote.</p>
+
+                            <p class="reserva-precio">$20 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== DÍA DEL FESTIVAL · GUÍAS TURÍSTICOS ========== -->
+                <h3 class="reservas-grupo">Día del festival · Guías turísticos</h3>
+
+                <p class="subtitulo">
+                    Acompañamiento local durante el día del festival.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="jocote-04"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía local de fincas de jocote barón rojo"
+                             data-precio="20"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/jocote-baron.jpg"
+                                 alt="Jocote Barón Rojo"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía local de fincas de jocote barón rojo</h4>
+                            <p>Un guía de la comunidad te acompaña por las fincas y te explica el cultivo y las variedades.</p>
+
+                            <p class="reserva-precio">$20 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="jocote-05"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía bilingüe (español e inglés)"
+                             data-precio="40"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/San-Lorenzo.jpg"
+                                 alt="San Lorenzo, Ahuachapán"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía bilingüe (español e inglés)</h4>
+                            <p>Ideal para visitantes extranjeros. Explicaciones en dos idiomas durante todo el recorrido.</p>
+
+                            <p class="reserva-precio">$40 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="jocote-06"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía de artesanías y productos locales"
+                             data-precio="25"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Ventas-Festival-Jocote.jpg"
+                                 alt="Ventas del Festival del Jocote"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía de artesanías y productos locales</h4>
+                            <p>Acompañamiento por los puestos de emprendedores y artesanos de la zona, con explicación de cada producto.</p>
+
+                            <p class="reserva-precio">$25 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== DÍA DEL FESTIVAL · TRANSPORTE ========== -->
+                <h3 class="reservas-grupo">Día del festival · Transporte</h3>
+
+                <p class="subtitulo">
+                    Llega a San Lorenzo sin preocuparte por manejar.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="jocote-07"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido desde San Salvador"
+                             data-precio="12"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido desde San Salvador</h4>
+                            <p>Viaje de ida y vuelta hasta San Lorenzo, con salida temprano por la mañana.</p>
+
+                            <p class="reserva-precio">$12 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="jocote-08"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado a San Lorenzo"
+                             data-precio="55"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado a San Lorenzo</h4>
+                            <p>Vehículo con conductor disponible durante todo el día del festival.</p>
+
+                            <p class="reserva-precio">$55 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="jocote-09"
+                             data-tipo="Transporte"
+                             data-nombre="Bus turístico para grupos"
+                             data-precio="130"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-bus.jpg"
+                                 alt="Bus turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Bus turístico para grupos</h4>
+                            <p>Para familias grandes, grupos de amigos o excursiones. Reserva con anticipación.</p>
+
+                            <p class="reserva-precio">$130 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" min="2027-03-01" max="2027-03-31">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="30" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="banda-cierre">
+            <p class="frase">¡Saborea la tradición del <span class="destacado">Jocote</span>!</p>
+            <p class="lema">🍒 Un fruto que une a las comunidades</p>
+        </div>
+
+        <div class="footer-contenido">
+
+            <div class="footer-columna footer-marca">
+
+                <h3>Descubre El Salvador</h3>
+
+                <p>
+                    Te invitamos a descubrir la belleza,
+                    cultura y calidez de nuestra gente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>INFORMACIÓN</h3>
+
+            <a href="Acercade.html">Acerca de El Salvador</a>
+            <a href="consejos.html">Consejos de viaje</a>
+            <a href="hospedaje.html">Hospedaje</a>
+            <a href="transporte.html">Transporte</a>
+            <a href="blog.html">Blog</a>
+            <a href="#reservas">Reservas</a>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>CONTACTOS</h3>
+
+                <p>📞 +503 6869-1065</p>
+                <p>✉ descubreelsalvador@gmail.com</p>
+                <p>📍 San Salvador, El Salvador</p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>REDES SOCIALES</h3>
+
+                <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 Descubre El Salvador. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+
+</html>

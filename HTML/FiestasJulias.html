@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fiestas Julias - Descubre El Salvador</title>
+    <link rel="stylesheet" href="../CSS/subpaginas.CSS">
+    <link rel="stylesheet" href="../CSS/buscador.CSS">
+    <link rel="stylesheet" href="../CSS/hamburguesa.CSS">
+    <link rel="icon" type="imagen/png" href="../IMG/logo2.jpeg">
+</head>
+
+<body>
+
+    <nav class="menu" aria-label="Navegacion principal">
+
+        <a href="../index.html">INICIO</a>
+        <a href="Destinos.html">DESTINOS</a>
+        <a href="lugaresdestacados.html">LUGARES DESTACADOS</a>
+        <a href="gastronomia.html">GASTRONOMÍA</a>
+        <a href="eventos.html">EVENTOS</a>
+
+        <span class="nav-iconos">
+            <div class="buscador-nav">
+                <button type="button" class="icono-nav icono-buscador" aria-label="Buscar" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <form class="buscador-form" role="search" action="Destinos.html" method="get">
+                    <input type="search" name="q" class="buscador-input" placeholder="Buscar destinos..." aria-label="Buscar destinos">
+                </form>
+            </div>
+
+            <div class="user-menu">
+                <a href="login.html" id="btnUsuario" class="icono-nav" aria-label="Iniciar sesión">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 20c0-4.42 3.58-8 8-8s8 3.58 8 8"></path>
+                    </svg>
+                </a>
+
+                <!-- Mini tarjeta, oculta por defecto -->
+                <div id="tarjetaSesion" class="tarjeta-sesion oculto">
+                    <p>Sesión activa como:</p>
+                    <strong id="nombreUsuarioTarjeta">Usuario</strong>
+                    <button id="btnCerrarSesion" class="btn-cerrar-sesion" type="button">Cerrar sesión</button>
+                </div>
+            </div>
+
+            <a href="compras.html" class="icono-nav icono-carrito" aria-label="Carrito de compras">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="carrito-contador" id="carritoContador">0</span>
+            </a>
+        </span>
+
+    </nav>
+
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="portada" id="inicio">
+
+            <img
+                src="../IMG/Santa-ana-portada.jpg"
+                alt="Fiestas Julias de Santa Ana"
+            >
+
+            <div class="oscuro"></div>
+
+            <div class="texto-portada">
+
+                <p>Tradición, alegría y cultura santaneca</p>
+
+                <h1>
+                    Fiestas
+                    <span class="destacado">Julias</span>
+                </h1>
+
+                <a href="#origen" class="boton">
+                    Explorar la guía
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BIENVENIDA -->
+        <section class="bienvenida contenedor" id="origen">
+
+            <div class="bienvenida-grid">
+
+                <div class="bienvenida-texto">
+
+                    <h2>Una celebración llena de tradición y alegría</h2>
+
+                    <p>
+                        Las Fiestas Julias son una de las celebraciones
+                        tradicionales más importantes de Santa Ana, El Salvador.
+                        Se realizan en honor a la Señora Santa Ana, patrona de
+                        la ciudad, durante el mes de julio. Estas fiestas reúnen
+                        actividades religiosas, culturales y recreativas que
+                        permiten a las familias y visitantes disfrutar de las
+                        tradiciones santanecas.
+                    </p>
+
+                </div>
+
+                <div class="bienvenida-imagen">
+                    <img
+                        src="../IMG/carrozas-santa-ana.jpg"
+                        alt="Desfile de las Fiestas Julias"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTIVIDADES -->
+        <section class="seccion tradiciones" id="tradiciones">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Actividades de las Fiestas Julias</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Conoce algunas de las actividades que forman parte
+                    de esta tradicional celebración de Santa Ana.
+                </p>
+
+
+                <div class="tarjetas">
+
+                    <!-- TARJETA 1 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/carrozas-santa-ana.jpg"
+                            alt="Desfile de las Fiestas Julias"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Desfile de carrozas</h3>
+
+                            <p>
+                                Los desfiles de carrozas son una de las
+                                actividades más esperadas de las Fiestas
+                                Julias. Se caracterizan por sus coloridas
+                                decoraciones, música y participación de
+                                diferentes comunidades de Santa Ana.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 2 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/carnaval-santa-ana.jpeg"
+                            alt="Carnaval de las Fiestas Julias"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Carnaval y actividades recreativas</h3>
+
+                            <p>
+                                Durante las fiestas se desarrollan
+                                actividades recreativas, música, bailes
+                                y eventos para toda la familia. El
+                                ambiente festivo reúne a habitantes y
+                                visitantes que disfrutan de la alegría
+                                santaneca.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TARJETA 3 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/virgen-santa-ana-fiestas-julias.jpg"
+                            alt="Celebración religiosa de Santa Ana"
+                            loading="lazy"
+                        >
+
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Celebración religiosa</h3>
+
+                            <p>
+                                Las actividades religiosas son una parte
+                                importante de las Fiestas Julias. Se
+                                realizan misas, oraciones y celebraciones
+                                en honor a la Señora Santa Ana, patrona
+                                de la ciudad.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LUGARES -->
+        <section class="seccion lugares fondo-claro" id="lugares">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Dónde disfrutar las Fiestas Julias</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Santa Ana cuenta con diferentes espacios donde se
+                    desarrollan actividades religiosas, culturales y
+                    recreativas durante las fiestas.
+                </p>
+
+
+                <div class="tarjetas">
+
+                    <!-- LUGAR 1 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/Santa-ana-portada.jpg"
+                            alt="Catedral de Santa Ana"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Catedral de Santa Ana</h3>
+
+                            <p>
+                                La Catedral de Santa Ana es uno de los
+                                principales lugares relacionados con las
+                                celebraciones religiosas de las Fiestas
+                                Julias y un importante símbolo de la
+                                ciudad.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                Santa Ana, El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=Catedral+de+Santa+Ana+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- LUGAR 2 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/paque-libertad.jpg"
+                            alt="Parque Libertad de Santa Ana"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Parque Libertad</h3>
+
+                            <p>
+                                El Parque Libertad es uno de los espacios
+                                más representativos del centro histórico
+                                de Santa Ana. Es un lugar ideal para
+                                disfrutar del ambiente cultural y
+                                tradicional de la ciudad.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                Centro Histórico de Santa Ana,
+                                El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=Parque+Libertad+Santa+Ana+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- LUGAR 3 -->
+                    <article class="tarjeta">
+
+                        <img
+                            class="tarjeta-img"
+                            src="../IMG/feria-santa-ana.jpg"
+                            alt="Feria de las Fiestas Julias"
+                            loading="lazy"
+                        >
+
+                        <div class="tarjeta-contenido">
+
+                            <h3>Campo de la feria</h3>
+
+                            <p>
+                                Durante las Fiestas Julias se habilitan
+                                espacios para disfrutar de juegos
+                                mecánicos, comida, actividades familiares
+                                y diferentes atracciones que forman parte
+                                del ambiente festivo de Santa Ana.
+                            </p>
+
+                            <p class="datos">
+                                <strong>Ubicación:</strong>
+                                Santa Ana, El Salvador
+                            </p>
+
+                            <a
+                                class="ver-mapa"
+                                href="https://www.google.com/maps/search/?api=1&query=Campo+de+la+Feria+Santa+Ana+El+Salvador"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                📍 Ver ubicación
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion reservas" id="reservas">
+
+            <div class="contenedor">
+
+                <div class="titulo-decorado">
+                    <span class="raya"></span>
+                    <h2>Reserva tu visita a las Fiestas Julias</h2>
+                    <span class="raya"></span>
+                </div>
+
+                <p class="subtitulo">
+                    Elige el día del evento, selecciona una tour operadora, un guía o el transporte, indica el número de personas y agrega tu reserva al carrito.
+                </p>
+
+
+                <!-- ========== DEL 17 AL 25 DE JULIO · FERIA, DESFILES Y CARNAVAL ========== -->
+                <h3 class="reservas-grupo">Del 17 al 25 de julio · Feria, desfiles y carnaval</h3>
+
+                <p class="subtitulo">
+                    Días de feria ganadera, desfiles y ambiente festivo en Santa Ana. Elige el día que prefieras.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="julias-01"
+                             data-tipo="Tour operadora"
+                             data-nombre="Feria, desfile de carrozas y carnaval"
+                             data-precio="20"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/carrozas-santa-ana.jpg"
+                                 alt="Desfile de las Fiestas Julias"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Feria, desfile de carrozas y carnaval</h4>
+                            <p>Visita guiada a la feria y ubicación en un buen punto para ver las carrozas, la música y los personajes tradicionales.</p>
+
+                            <p class="reserva-precio">$20 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-07-17" min="2027-07-17" max="2027-07-25">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="julias-02"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía local del centro histórico de Santa Ana"
+                             data-precio="25"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/paque-libertad.jpg"
+                                 alt="Parque Libertad de Santa Ana"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía local del centro histórico de Santa Ana</h4>
+                            <p>Recorrido por el Parque Libertad, la Catedral y los alrededores durante las fiestas.</p>
+
+                            <p class="reserva-precio">$25 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-07-17" min="2027-07-17" max="2027-07-25">
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="julias-03"
+                             data-tipo="Transporte"
+                             data-nombre="Microbús compartido desde San Salvador"
+                             data-precio="10"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-microbus.jpg"
+                                 alt="Microbús turístico"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Microbús compartido desde San Salvador</h4>
+                            <p>Viaje de ida y vuelta a Santa Ana, con salida por la mañana.</p>
+
+                            <p class="reserva-precio">$10 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-07-17" min="2027-07-17" max="2027-07-25">
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="14" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ========== 26 DE JULIO · DÍA DE SANTA ANA ========== -->
+                <h3 class="reservas-grupo">26 de julio · Día de Santa Ana</h3>
+
+                <p class="subtitulo">
+                    Día de la patrona de la ciudad, con mañanitas, misa patronal y procesión por la tarde.
+                </p>
+
+                <div class="reservas-grid">
+
+                    <article class="reserva-card"
+                             data-id="julias-04"
+                             data-tipo="Tour operadora"
+                             data-nombre="Mañanitas, misa patronal y procesión"
+                             data-precio="25"
+                             data-unidad="persona">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/virgen-santa-ana-fiestas-julias.jpg"
+                                 alt="Celebración religiosa de Santa Ana"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Mañanitas, misa patronal y procesión</h4>
+                            <p>Acompañamiento durante los actos del día principal, desde la madrugada hasta la procesión.</p>
+
+                            <p class="reserva-precio">$25 <span>por persona</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-07-26" min="2027-07-26" max="2027-07-26" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="12" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="julias-05"
+                             data-tipo="Guía turístico"
+                             data-nombre="Guía de tradiciones y Catedral de Santa Ana"
+                             data-precio="30"
+                             data-unidad="grupo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/Santa-ana-portada.jpg"
+                                 alt="Catedral de Santa Ana"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Guía de tradiciones y Catedral de Santa Ana</h4>
+                            <p>Explicación de la historia de la Catedral y de las tradiciones en honor a la Señora Santa Ana.</p>
+
+                            <p class="reserva-precio">$30 <span>por grupo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-07-26" min="2027-07-26" max="2027-07-26" readonly>
+                                </label>
+                                <label>Personas
+                                    <input type="number" class="reserva-cantidad" min="1" max="15" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="reserva-card"
+                             data-id="julias-06"
+                             data-tipo="Transporte"
+                             data-nombre="Transporte privado desde San Salvador"
+                             data-precio="50"
+                             data-unidad="vehículo">
+
+                        <div class="reserva-imagen">
+                            <img src="../IMG/transporte-privado.jpg"
+                                 alt="Transporte privado"
+                                 loading="lazy"
+                                 onerror="this.style.display='none'">
+                        </div>
+
+                        <div class="reserva-cuerpo">
+                            <h4>Transporte privado desde San Salvador</h4>
+                            <p>Vehículo con conductor para llegar temprano a las mañanitas y regresar después de la procesión.</p>
+
+                            <p class="reserva-precio">$50 <span>por vehículo</span></p>
+
+                            <div class="reserva-campos">
+                                <label>Fecha
+                                    <input type="date" class="reserva-fecha" value="2027-07-26" min="2027-07-26" max="2027-07-26" readonly>
+                                </label>
+                                <label>Pasajeros
+                                    <input type="number" class="reserva-cantidad" min="1" max="4" value="1">
+                                </label>
+                            </div>
+
+                            <button type="button" class="boton-reservar">Agregar reserva</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="aviso-reserva" id="aviso-reserva" role="status" aria-live="polite"></p>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="banda-cierre">
+            <p class="frase">Vive la alegría de las <span class="destacado">Fiestas Julias</span></p>
+            <p class="lema">🎇 Tradición que honra a Santa Ana</p>
+        </div>
+
+        <div class="footer-contenido">
+
+            <div class="footer-columna footer-marca">
+
+                <h3>Descubre El Salvador</h3>
+
+                <p>
+                    Te invitamos a descubrir la belleza,
+                    cultura y calidez de nuestra gente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>INFORMACIÓN</h3>
+
+                <a href="Acercade.html">Acerca de El Salvador</a>
+            <a href="consejos.html">Consejos de viaje</a>
+            <a href="hospedaje.html">Hospedaje</a>
+            <a href="transporte.html">Transporte</a>
+            <a href="blog.html">Blog</a>
+            <a href="#reservas">Reservas</a>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>CONTACTOS</h3>
+
+                <p>📞 +503 6869-1065</p>
+                <p>✉ descubreelsalvador@gmail.com</p>
+                <p>📍 San Salvador, El Salvador</p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>REDES SOCIALES</h3>
+
+                <div class="footer-redes">
+    <a href="https://www.instagram.com/descubriendoelsv.1?stkn=djlzeDZqMXI5ZnV6">Instagram</a>
+    <a href="https://www.facebook.com/share/19dfvCsHeo/">Facebook</a>
+    <a href="https://x.com/Descubriendosv0">X</a>
+</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <p>
+                © 2026 Descubre El Salvador. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../JS/subpaginas.js"></script>
+
+</body>
+
+</html>
